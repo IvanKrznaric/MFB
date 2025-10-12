@@ -15,6 +15,7 @@ project:
     children:
     - file: 1-matrice.md
     - file: 2-determinanta.md
+    -file: 3-rang.md
   - title: Part 2. Functions of one variable
     children:
     - file: 5-limits.md

@@ -1,1 +1,1 @@
-## 5. Domains and limits of functions
+# 5. Domains and limits of functions
