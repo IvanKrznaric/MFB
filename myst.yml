@@ -1,0 +1,24 @@
+# See docs at: https://mystmd.org/guide/frontmatter
+version: 1
+project:
+  license: CC-BY-4.0
+  open_access: true
+  title: Mathematics for Business
+  description: Here you will find the materials for the seminars
+  author: 
+    - name: Ivan Krznarić
+      affiliation: Faculty of Economics and Business; University of Zagreb
+      email: ikrznaric@efzg.hr
+  toc:
+  - file: intro.md
+  - title: Part 1. Linear algebra
+    children:
+    - file: 1-matrice.md
+    - file: 2-determinanta.md
+  - title: Part 2. Functions of one variable
+    children:
+    - file: 5-limits.md
+site:
+  template: book-theme
+  outline_maxdepth : 1
+
