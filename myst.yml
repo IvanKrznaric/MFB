@@ -10,7 +10,7 @@ project:
       affiliation: Faculty of Economics and Business; University of Zagreb
       email: ikrznaric@efzg.hr
   toc:
-  - file: intro.md
+  - file: Intro.md
   - title: Part 1. Linear algebra
     children:
     - file: 1-matrice.md
@@ -20,5 +20,6 @@ project:
     - file: 5-limits.md
 site:
   template: book-theme
-  outline_maxdepth : 1
+  options:
+    outline_maxdepth : 1
 
