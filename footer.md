@@ -14,7 +14,7 @@
 ::::{div}
 # Useful links
 - [Faculty of Economics and Business](https://www.efzg.unizg.hr/en)
-- [Department of mathematics](https://www.efzg.unizg.hr/katedre-29721/matematika/29783)
+- [Department of Mathematics](https://www.efzg.unizg.hr/katedre-29721/matematika/29783)
 - [Merlin](https://moodle.srce.hr/)
 ::::
 
