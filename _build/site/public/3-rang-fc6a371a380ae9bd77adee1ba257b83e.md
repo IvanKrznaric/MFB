@@ -1,0 +1,10 @@
+# 3. Rank of a matrix
+
+## 3.1 Introduction
+
+## 3.2 Vectors
+```{admonition} Definicija
+:icon:false
+:color:green
+  An example of an admonition with a _title_.
+```

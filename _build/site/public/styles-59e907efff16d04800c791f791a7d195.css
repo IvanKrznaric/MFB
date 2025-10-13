@@ -1,0 +1,14 @@
+/* custom admonition class "definition" */
+.definicija {
+  background-color: #e8f8ec;
+  border-left: 7px solid #27ae60;
+  border-radius: 0.5em;
+  padding: 1em;
+  margin: 5em 0;
+}
+
+.definition.title {
+  color: #1e8449;
+  font-weight: bold;
+  font-size: 1.05em;
+}

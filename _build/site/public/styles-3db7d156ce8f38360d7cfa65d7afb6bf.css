@@ -1,0 +1,16 @@
+/* ---------- Custom 'Definition' admonition style ---------- */
+
+.admonition.definition {
+  background-color: #e8f8ec;          /* soft green background */
+  border-left: 6px solid #27ae60;     /* solid green border */
+  border-radius: 0.5em;
+  padding: 1em 1.2em;
+  margin: 1.2em 0;
+}
+
+/* Style the title inside the definition box */
+.admonition.definition .admonition-title {
+  color: #1e8449;
+  font-weight: bold;
+  font-size: 1.05em;
+}
