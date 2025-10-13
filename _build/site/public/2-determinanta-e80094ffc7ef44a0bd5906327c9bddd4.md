@@ -200,8 +200,8 @@ In general, every system can be written in matrix form as
 \begin{equation*} AX = B, \end{equation*}
 where $A$ is **the matrix of coefficients**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
 
-:::{tip} Definition
-:icon: false
+:::{prf:definition}
+:numbered: false
 We say that a system $AX = B$ of $n$ equations with $n$ unknows is **Cramer's system** if $\text{det}(A) \neq 0.$
 :::
 
@@ -209,8 +209,8 @@ Cramer's system are particularly easy to solve because their solutions are given
 \begin{equation*} x_i = \frac{D_i}{D}, \quad i = 1, \dots, n\end{equation*}
 where $D = \text{det}(A)$ and $D_i$ is the determinant of the matrix obtained by replacing the $i$-th column of the matrix $A$ by the column-matrix $B$.
 
-:::{note} Problem 2.10
-:icon:false
+```{exercise}
+:enumerator: 2.10
 By using Cramer's rule, solve the following system of linear equations:
 \begin{equation*} \begin{cases} x_1 -6x_2 -x_3 = -6 \\ -2x_1 + x_2 +2x_3 = 1 \\ 3x_1 +x_3 = 4 \end{cases} \end{equation*}
-:::
+```

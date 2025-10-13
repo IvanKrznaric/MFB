@@ -130,8 +130,8 @@ Let $A = \begin{bmatrix} 1 & 0 & 0 & 3 \\ 0 & 1 & -2 & 0 \\ -2 & 3 & -2 & 3 \\ 0
 ## 3.4 Inverse of a matrix (remastered)
 As we have seen in the previous chapter, we can use the determinant to calculate the inverse of a regular matrix:
 \begin{equation*} M_{ij} \rightarrow C \rightarrow A^\ast \rightarrow A^{-1} \end{equation*}
-We will now learn how to use the [Gauss-Jordan algorithm](#GJALGO) to find the inverse of a regular matrix in a much easier way.
+We will now learn how to use the Gauss-Jordan algorithm to find the inverse of a regular matrix in a much easier way.
 :::{note} Problem 3.11 
 :icon:false
-Using the Gauss-Jordan algorithm, find the inverse of the matrix $A = \begin{bmatrix} 1 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & 0 \end{bmatrix}.$
+Using the [Gauss-Jordan algorithm](#GJALGO), find the inverse of the matrix $A = \begin{bmatrix} 1 & 1 & 0 \\ 1 & 1 & 0 \\ 1 & 0 & 0 \end{bmatrix}.$
 :::

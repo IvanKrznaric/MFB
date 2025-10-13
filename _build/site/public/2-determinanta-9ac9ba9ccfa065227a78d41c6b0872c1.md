@@ -23,7 +23,6 @@ We can use this approach to define "divison" of matrices. If we would like to di
 
 :::{tip} Definition
 :icon:false
-:label:inverz
 Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **the inverse** of the matrix $A$ if 
 \begin{equation*} A \cdot X = X \cdot A = I .\end{equation*}
 In that case, we say that the matrix $A$ is **invertible** or **regular**. The inverse $X$ of the matrix $A$ is denoted by $A^{-1}.$
@@ -122,29 +121,19 @@ The most important theorem when talking about the determinant is the **Binet-Cau
 
 :::{danger} Theorem (Binet-Cauchy)
 :icon:false
-:label:BCTHM
 Let $A,B$ be two $n \times n$ matrices. Then $\text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).$
 :::
 
-:::{note} Problem 2.8
-:icon:false
+```{exercise}
+:enumerator: 2.8
 Let $A = \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & 4 \\ 0 & 0 & 1 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 8 & 16 \\ 0 & 1 & 2 \\ 0 & 0 & 2 \end{bmatrix}.$ \
 If $X$ is a $3 \times 3$ matrix such that $XA = B,$ find the determinant of the matrix $X$.
-:::
-
-:::{error} Common mistake on the Midterm/Exam
-:class:dropdown
-A common mistake that students make when they are asked to state the [Binet-Cauchy theorem](#BCTHM) is that they simply write 
-\begin{equation*}
-\text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).
-\end{equation*}
-That equation, without any additional assumptions is **false**. What are $A,B?$ If they are matrices, what kind of matrices? If they are square matrices, can they be any square matrices or...? \
-In the second homework, you have a question that deals specifically with this common mistake and shows you what the correct answer should be.
-:::
+```
 ## 2.3. Matrix inversion
 As we have mentioned in the introduction, the main point of the determinant is to give us a criterion for checking whether or not a matrix has an inverse or not. That criterion is the following:
 
-:::{important}
+:::{prf:criterion}
+:numbered:false
 \begin{equation*} 
 \begin{split}
 \text{det}(A) \neq 0 &\implies A \text{ has an inverse} \\ 
@@ -153,10 +142,10 @@ As we have mentioned in the introduction, the main point of the determinant is t
 \end{equation*}
 :::
 
-Since we have just learned how to compute the determinant of a matrix, we know how to chekc whether or not a matrix has an inverse or not. Next thing we would like to know is how to explicitly compute the inverse of a matrix. 
+Next thing we would like to know is how to explicitly compute the inverse of a matrix. 
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 Let $A = [a_{ij}] \in M_n$ be a square matrix. 
 - **The minor** of an element $a_{ij}$ is the determinant of a matrix obtained by deleting the $i$-th row and the $j$-th column of the matrix $A$. That number is denoted by $M_{ij}$.
 - **The cofactor matrix** is a $n \times n$ matrix $C = [c_{ij}],$ where 
@@ -166,30 +155,17 @@ Let $A = [a_{ij}] \in M_n$ be a square matrix.
 Finally, the inverse of the matrix $A$ is given by the formula 
 \begin{equation*} A^{-1} = \frac{1}{\text{det}(A)}A^\ast.\end{equation*}
 
-:::{note} Problem 2.9
-:icon:false
+```{exercise}
+:enumerator: 2.9
 Let $A = \begin{bmatrix} 2 & 4 & 1 \\ 4 & 3 & 7 \\ 2 & 1 & 3\end{bmatrix}.$
 - Show that the matrix $A$ is invertible;
 - Using the adjoint, find the inverse $A^{-1}$ of the matrix $A$
-:::
-
-:::{error} Common mistake on the Midterm/Exam
-:class:dropdown
-Another common mistake that students make on the Midterm/Exam is when they are asked to define an inverse of a regular matrix $X$. A lot of students simply write 
-\begin{equation*}
-A^{-1} = \frac{1}{\text{det}(A)}
-\end{equation*}
-and move on. Of course, this answer is **wrong**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
-\begin{equation*}
-A \cdot X = X \cdot A = I.
-\end{equation*}
-It is very important - not just in this course, but generally - to know what are the definitions of the terms we are talking about and what are the consequences of those definitions.
-:::
+```
 
 ## 2.4 Cramer's systems
 One of the main application of matrices we are going to see is revolving around solving system's of linear equations.
-:::{caution} Example
-:icon: false
+:::{prf:example}
+:numbered: false
 The system
 \begin{equation*} \begin{cases} 2x-5y = 15 \\ 3x+y = 31. \end{cases} \end{equation*}
 can be written in the matrix form as 
@@ -200,8 +176,8 @@ In general, every system can be written in matrix form as
 \begin{equation*} AX = B, \end{equation*}
 where $A$ is **the matrix of coefficients**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
 
-:::{tip} Definition
-:icon: false
+:::{prf:definition}
+:numbered: false
 We say that a system $AX = B$ of $n$ equations with $n$ unknows is **Cramer's system** if $\text{det}(A) \neq 0.$
 :::
 
@@ -209,8 +185,8 @@ Cramer's system are particularly easy to solve because their solutions are given
 \begin{equation*} x_i = \frac{D_i}{D}, \quad i = 1, \dots, n\end{equation*}
 where $D = \text{det}(A)$ and $D_i$ is the determinant of the matrix obtained by replacing the $i$-th column of the matrix $A$ by the column-matrix $B$.
 
-:::{note} Problem 2.10
-:icon:false
+```{exercise}
+:enumerator: 2.10
 By using Cramer's rule, solve the following system of linear equations:
 \begin{equation*} \begin{cases} x_1 -6x_2 -x_3 = -6 \\ -2x_1 + x_2 +2x_3 = 1 \\ 3x_1 +x_3 = 4 \end{cases} \end{equation*}
-:::
+```

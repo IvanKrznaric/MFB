@@ -23,7 +23,6 @@ We can use this approach to define "divison" of matrices. If we would like to di
 
 :::{tip} Definition
 :icon:false
-:label:inverz
 Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **the inverse** of the matrix $A$ if 
 \begin{equation*} A \cdot X = X \cdot A = I .\end{equation*}
 In that case, we say that the matrix $A$ is **invertible** or **regular**. The inverse $X$ of the matrix $A$ is denoted by $A^{-1}.$
@@ -173,23 +172,10 @@ Let $A = \begin{bmatrix} 2 & 4 & 1 \\ 4 & 3 & 7 \\ 2 & 1 & 3\end{bmatrix}.$
 - Using the adjoint, find the inverse $A^{-1}$ of the matrix $A$
 :::
 
-:::{error} Common mistake on the Midterm/Exam
-:class:dropdown
-Another common mistake that students make on the Midterm/Exam is when they are asked to define an inverse of a regular matrix $X$. A lot of students simply write 
-\begin{equation*}
-A^{-1} = \frac{1}{\text{det}(A)}
-\end{equation*}
-and move on. Of course, this answer is **wrong**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
-\begin{equation*}
-A \cdot X = X \cdot A = I.
-\end{equation*}
-It is very important - not just in this course, but generally - to know what are the definitions of the terms we are talking about and what are the consequences of those definitions.
-:::
-
 ## 2.4 Cramer's systems
 One of the main application of matrices we are going to see is revolving around solving system's of linear equations.
-:::{caution} Example
-:icon: false
+:::{prf:example}
+:numbered: false
 The system
 \begin{equation*} \begin{cases} 2x-5y = 15 \\ 3x+y = 31. \end{cases} \end{equation*}
 can be written in the matrix form as 
@@ -200,8 +186,8 @@ In general, every system can be written in matrix form as
 \begin{equation*} AX = B, \end{equation*}
 where $A$ is **the matrix of coefficients**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
 
-:::{tip} Definition
-:icon: false
+:::{prf:definition}
+:numbered: false
 We say that a system $AX = B$ of $n$ equations with $n$ unknows is **Cramer's system** if $\text{det}(A) \neq 0.$
 :::
 
@@ -209,8 +195,8 @@ Cramer's system are particularly easy to solve because their solutions are given
 \begin{equation*} x_i = \frac{D_i}{D}, \quad i = 1, \dots, n\end{equation*}
 where $D = \text{det}(A)$ and $D_i$ is the determinant of the matrix obtained by replacing the $i$-th column of the matrix $A$ by the column-matrix $B$.
 
-:::{note} Problem 2.10
-:icon:false
+```{exercise}
+:enumerator: 2.10
 By using Cramer's rule, solve the following system of linear equations:
 \begin{equation*} \begin{cases} x_1 -6x_2 -x_3 = -6 \\ -2x_1 + x_2 +2x_3 = 1 \\ 3x_1 +x_3 = 4 \end{cases} \end{equation*}
-:::
+```
