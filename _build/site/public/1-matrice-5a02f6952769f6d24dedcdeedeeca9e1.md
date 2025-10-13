@@ -243,19 +243,19 @@ Let
 Find the products $AB$ and $BC.$
 :::
 
-:::{note} Problem 1.12
-:icon:false
+```{exercise} 
+:enumerator: 1.12
 :label: komutiranje
 Let $A = \begin{bmatrix} 1 & 2 \\ 3 & 4\end{bmatrix}$ and $B = \begin{bmatrix}5 & 6 \\ 7 & 8 \end{bmatrix}.$ Find $AB$ and $BA.$
-:::
+```
 
 :::{note}
 Notice that [](#komutiranje) tells us that $AB \neq BA.$ In other words, matrix multiplication is not commutative so the order in whcih we multipy matrices matters!
 :::
 
-:::{note} Problem 1.13
-:icon:false
+```{exercise}
+:enumerator: 1.13
 Let $A = \begin{bmatrix} 0 & 1 & 2 \\ -1 & 0 & -1 \\ -2 & 1 & 0\end{bmatrix}$ and $B = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2\end{bmatrix}.$ Find $2A + BA^T.$
-:::
+```
 
 

@@ -7,6 +7,7 @@
 A certain economy is comprised of the following three sectors: agriculture, manufacturing and energy. Each industry consumes a percentage of outputs from the other industries in order to produce its goods, and those percentages are given in the following table:
 \begin{equation*}
 \begin{array}{| c | c | c | c |}
+
 \hline
 \hspace{0.2 cm} & \text{Agriculture} &\text{Manufacturing} &\text{Energy} \\
 \hline
@@ -21,209 +22,175 @@ A certain economy is comprised of the following three sectors: agriculture, manu
 The final demands for these industries are given in the following table:
 \begin{equation*}
 \begin{array}{| c | c |}
-    \hline
-    \hline
-    \text{Agriculture} &100\\
-    \hline
-    \text{Manufacturing} &150 \\
-    \hline
-    \text{Energy} &80\\
-    \hline
-    \end{array}
+\hline
+\text{Agriculture} &100\\
+\hline
+\text{Manufacturing} &150 \\
+\hline
+\text{Energy} &80\\
+\hline
+\end{array}
 \end{equation*}
 How much should each industry produce in order to meet the demands?
 :::
 
-:::{caution} Example
-:icon:false
-A company tracks customer behaviour where people move between three kinds of customers: loyal, occasional and lost. The probabilities that a certain customer will change its category in a time period of half a year are given in the following table:
-\begin{equation*}
-\begin{array}{|c|c|c|c|}
-    \hline
-    \text{From/To } &\text{Loyal} &\text{Occasional} &\text{Lost} \\
-    \hline
-    \text{Loyal} &0.7 &0.1 &0.1 \\
-    \hline
-    \text{Occasional} &0.2 &0.6 &0.2 \\
-    \hline
-    \text{Lost} &0.1 &0.3 &0.7 \\
-    \hline
-\end{array}
-\end{equation*}
-If we start with a thousand customers, which are categorized in the following way:
-\begin{equation*}
-\begin{array}{| c | c |}
-    \hline
-    \hline
-    \text{Loyal} &600 \\
-    \hline
-    \text{Occasional} &300 \\
-    \hline
-    \text{Lost} &100 \\
-    \hline
-    \end{array}
-\end{equation*}
-determine the distribution of these customers a year from now.
-:::
-
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 **A matrix** is a rectangular array of numbers. If a matrix has $n$ rows and $m$ columns, we say that the **order** of that matrix is $n \times m.$
 :::
 There are two ways in which we can specifiy a matrix:
 - you can write it down explicitly
-- you can specify its order and state the formula for computing its entries
+- we can specify its order and state the formula for computing its entries
 
 
-:::{note} Problem 1.1
-:icon:false
+```{exercise}
+:enumerator:1.1
 Consider the matrix $M = \begin{bmatrix} 1 & 0 & 2 \\ e & \pi & \frac{1}{7} \end{bmatrix}.$
 1. What is the order of this matrix?
 2. Which element is at the position $(2,1)$ and which is at the position $(1,2)$?
-:::
+```
 
-:::{note} Problem 1.2
-:icon:false
+```{exercise}
+:enumerator: 1.2
 Write out a matrix $B = [b_{ij}]$ of order $3 \times 4$ such that $b_{ij} = i^2 - j^2.$
-:::
+```
 
 ## 1.2 Types of matrices
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 A matrix that has the same number of rows and columns is called a **square matrix.** Otherwise, a matrix is called **rectangular matrix.**
 :::
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 A square matrix is called
 - **diagonal matrix** if all its elements outside the main diagonal are equal to $0$
 - **scalar matrix** if it is a diagonal matrix whose entries on the main diagonal are equal
 :::
 
-:::{note} Problem 1.3
-:icon:false
+```{exercise}
+:enumerator: 1.3
 What do we call the following matrices:
 :::{math}
 :enumerated:false
 \begin{bmatrix} 0 & 0 & 0 & 0 \\ 0 & 1 & 0 & 0 \\ 0 & 0 & 2 & 0 \\ 0 & 0 & 0 & 3 \end{bmatrix}, \quad \begin{bmatrix} - \sqrt[3]{2} & 0 & 0 \\ 0 & - \sqrt[3]{2} & 0 \\ 0 & 0 & -\sqrt[3]{2} \end{bmatrix}?
 :::
+```
 
-
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 A square matrix is called:
 - **null-matrix** if all its elements are equal to $0$. Such a matrix is denoted by $\mathbf{0}.$
 - **identity matrix** if it is a scalar matrix whose elements on the diagonal are all equal to $1$. Such a matrix is denoted by $I.$
 :::
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 A square matrix $A = [a_{ij}]$ is called:
 - **symmetric matrix** if its elements satisfy $a_{ji} = a_{ij}$
 - **antisymmetric matris** if its elements satisfy $a_{ji} = -a_{ij}$
 :::
 
-:::{note} Problem 1.4
-:icon: false
+```{exercise}
+:enumerator: 1.4
 What do we call the following matrices:
-\begin{equation*}
+:::{math}
+:numbered:false
 \begin{bmatrix} 0 & 2 & 8 \\ 2 & \pi & e^2 \\ 8 & e^2 & \sqrt[4]{3} \end{bmatrix}, \quad \begin{bmatrix} 0 & 2 & 3 & 5 \\ -2 & 0 & 7 & 11 \\ -3 & -7 & 0 & 13 \\ -5 & -11 & -13 & 0 \end{bmatrix}?
-\end{equation*}
 :::
+```
 
-:::{note} Problem 1.5
-:icon:false
+```{exercise}
+:enumerator: 1.5
 Write out the missing elements so that the resulting matrix is antisymmetric:
-\begin{equation*}
+:::{math}
+:numbered:false
 \begin{bmatrix}  \cdot & \cdot & \cdot \\ 92 & \cdot & -1 \\ \sqrt{3} & \cdot & \cdot \end{bmatrix}
-\end{equation*}
 :::
+```
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 A square matrix $A = [a_{ij}]$ is called:
 - **upper triangular matrix** if $a_{ij} = 0$ for all $i > j$
 - **lower triangular matrix** if $a_{ij} = 0$ for all $i < j$
 :::
 
-:::{note} Problem 1.6
-:icon:false
+```{exercise}
+:enumerator: 1.6
 Write down the following matrices and determine which one is an upper triangular and which one is lower triangular matrix:
 - $U = [u_{ij}]$ of order $3 \times 3$ such that $u_{ij} = \begin{cases} i^3, i \leq j \\ 0, i > j\end{cases}$
 - $L = [l_{ij}]$ or order $4 \times 4$ such that $l_{ij} = \begin{cases} i \cdot j, i \geq j \\ 0, i < j\end{cases}$
-:::
+```
 
 ## 1.3 Matrix operations
-:::{tip}
-:class:dropdown
+```{tip}
 When defining any operation which involves matrices, you need to answer the following questions:
 1. What are the inputs of the operation?
 2. What is the results of the operation?
 3. How do we compute the result?
-:::
+```
 
 ### Transpose of a matrix
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 Given a matrix $A$ of order $n \times m,$ its **transpose** is the matrix of order $m \times n$ obtained by rewritting the rows of the matrix $A$ as its columns. Such a matrix is denoted by $A^T.$
 :::
 
-:::{note} Problem 1.7
-:icon:false
+```{exercise}
+:enumerator: 1.7
 Find the transpose of the matrix $A = \begin{bmatrix} 2 & 3 & 6 & 7 & 8 \\ 4 & 3 & 2 & 1 & 0\end{bmatrix}.$
-:::
+```
 
 ### Matrix addition
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 If $A = [a_{ij}]$ and $B = [b_{ij}]$ are matrices of the same order $n \times m,$ then their **sum** is the matrix $C = [c_{ij}]$ of order $n \times m$ where
 \begin{equation*} c_{ij} = a_{ij} + b_{ij} \end{equation*}
 :::
 
-:::{note} Problem 1.8
-:icon:false
+```{exercise}
+:enumerator:1.8
 Let 
 \begin{equation*} A = \begin{bmatrix} 9 & -3 \\ 4 & 1 \\ 2 & 0 \end{bmatrix}, \quad B = \begin{bmatrix} 5 & 2 \\ -1 & 6 \\ 3 & 4 \end{bmatrix}, \quad C = \begin{bmatrix} 1 & 2 \\ 1 & 1 \\ 3 & 5 \end{bmatrix}\end{equation*}
 Find the sums $A + B$ and $B + C.$
-:::
+```
 
 ### Multiplication by a scalar
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 Let $A = [a_{ij}]$ be a matrix of order $n \times m$ and let $\alpha \in \R$ be a scalar (i.e. a number). **Multiplication of the matrix $A$ by a scalar $\alpha$** is a matrix $B = [b_{ij}],$ where 
 \begin{equation*} b_{ij} = \alpha \cdot a_{ij}.\end{equation*}
 :::
 
-:::{note} Problem 1.9
-:icon:false
+```{exercise}
+:enumerator: 1.9
 Let 
-\begin{equation*} 
-A = \begin{bmatrix} 9 & -3 \\ 4 & 1 \\ 2 & 0 \end{bmatrix}, \quad B = \begin{bmatrix} 5 & 2 \\ -1 & 6 \\ 3 & 4 \end{bmatrix}, \quad C = \begin{bmatrix} 1 & 2 \\ 1 & 1 \\ 3 & 5 \end{bmatrix}
-\end{equation*}
+\begin{equation*} A = \begin{bmatrix} 9 & -3 \\ 4 & 1 \\ 2 & 0 \end{bmatrix}, \quad B = \begin{bmatrix} 5 & 2 \\ -1 & 6 \\ 3 & 4 \end{bmatrix}, \quad C = \begin{bmatrix} 1 & 2 \\ 1 & 1 \\ 3 & 5 \end{bmatrix}\end{equation*}
 Find the matrices $3A, B-C$ and $A + 2B + 3C.$
-:::
+```
 
 ### Scalar product
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 **Scalar product** of a row-matrix $\begin{bmatrix} a_1 & a_2 & \dots & a_n\end{bmatrix}$ and a column-matrix $\begin{bmatrix} b_1 \\ b_2 \\ \vdots \\ b_n\end{bmatrix}$ is defined as 
 \begin{equation*} \sum_{i = 1}^n a_i b_i = a_1b_1 + a_2b_2 + \dots + a_nb_n.\end{equation*}
 :::
 
-:::{note} Problem 1.10
-:icon:false
+```{exercise}
+:enumerator: 1.10
 Let 
 \begin{equation*} A = \begin{bmatrix} 1 & -1 & 2 & -2 \end{bmatrix}, \quad B = \begin{bmatrix} 0 \\ 8 \\ 0 \\ -4 \end{bmatrix}, \quad C = \begin{bmatrix} 5 \\ -5 \\ 5 \\ -5 \end{bmatrix}. \end{equation*}
 Find the scalar products $AB$ and $BC.$
-:::
+```
 
 ### Matrix multiplication
 
-:::{tip} Definition
-:icon:false
+:::{prf:definition}
+:numbered:false
 Let $A = [a_{ij}]$ be a matrix of order $n \times m$ and let $B = [b_{ij}]$ be a matrix of order $m \times p.$ We define **matrix multiplication** of matrices $A$ and $B$ as a matrix $C = [c_{ij}]$ of order $n \times p,$ whose elements are given by
 \begin{equation*}c_{ij} = \sum_{k = 1}^n a_{ik}b_{kj}. \end{equation*}
 :::
@@ -236,26 +203,26 @@ Notice that the element in the position $(i,j)$ of matrix $C$ is just the scalar
 Animation showcasing how we compute a product of two conformable matrices.
 :::
 
-:::{note} Problem 1.11
-:icon:false
+```{exercise}
+:enumerator:1.11
 Let 
 \begin{equation*} A = \begin{bmatrix} 0 & 1 \\ 1 & 0 \\ 2 & 1 \end{bmatrix}, \quad \begin{bmatrix} -1 & -1 & 2 & 2 \\ 0 & 4 & 0 & -5 \end{bmatrix}, \quad C = \begin{bmatrix} -1 & 0 \\ -2 & 5 \\ -5 & 1 \\ 7 & 1\end{bmatrix}.\end{equation*}
 Find the products $AB$ and $BC.$
-:::
+```
 
-:::{note} Problem 1.12
-:icon:false
+```{exercise} 
+:enumerator: 1.12
 :label: komutiranje
 Let $A = \begin{bmatrix} 1 & 2 \\ 3 & 4\end{bmatrix}$ and $B = \begin{bmatrix}5 & 6 \\ 7 & 8 \end{bmatrix}.$ Find $AB$ and $BA.$
-:::
+```
 
 :::{note}
 Notice that [](#komutiranje) tells us that $AB \neq BA.$ In other words, matrix multiplication is not commutative so the order in whcih we multipy matrices matters!
 :::
 
-:::{note} Problem 1.13
-:icon:false
+```{exercise}
+:enumerator: 1.13
 Let $A = \begin{bmatrix} 0 & 1 & 2 \\ -1 & 0 & -1 \\ -2 & 1 & 0\end{bmatrix}$ and $B = \begin{bmatrix} 2 & 0 & 0 \\ 0 & 2 & 0 \\ 0 & 0 & 2\end{bmatrix}.$ Find $2A + BA^T.$
-:::
+```
 
 
