@@ -23,4 +23,7 @@ site:
   template: book-theme
   options:
     outline_maxdepth : 1
+    style: ./css/footer.css
+  parts:
+    footer: footer.md
 
