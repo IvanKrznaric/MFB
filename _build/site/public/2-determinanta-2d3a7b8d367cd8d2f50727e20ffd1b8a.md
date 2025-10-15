@@ -177,7 +177,7 @@ Let $A = \begin{bmatrix} 2 & 4 & 1 \\ 4 & 3 & 7 \\ 2 & 1 & 3\end{bmatrix}.$
 :class:dropdown
 Another common mistake that students make on the Midterm/Exam is when they are asked to define an inverse of a regular matrix $X$. A lot of students simply write 
 \begin{equation*}
-A^{-1} = \frac{1}{\text{det}(A)}A^\ast.
+A^{-1} = \frac{1}{\text{det}(A)}A^\ast
 \end{equation*}
 and move on. Of course, this answer is **wrong**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
 \begin{equation*}
