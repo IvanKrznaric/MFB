@@ -1,0 +1,10 @@
+# 4. Systems of linear equations
+
+## 4.1 Introduction
+In [chapter $2$](#P2)
+
+## 4.2 Kronecker-Capelli theorem
+
+## 4.3 Gauss-Jordan method
+
+## 4.4 Input-output model

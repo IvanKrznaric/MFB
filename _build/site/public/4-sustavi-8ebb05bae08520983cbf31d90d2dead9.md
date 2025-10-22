@@ -1,0 +1,32 @@
+# 4. Systems of linear equations
+
+## 4.1 Introduction
+When we were learning about the determinant of a matrix, we learned how to solve Cramer's systems. Cramer's system is a very special kind of a system because its matrix of coefficients $A$ is invertible. In this chapter, we are going to learn how to solve general systems of linear equations.
+
+First, notice that not all systems of linear equations have a solution.
+:::{caution} Example
+:icon:false
+The system of linear equations given by 
+\begin{equation*} 
+\begin{cases} x+y = 1 \\ x + y = 2 \end{cases} 
+\end{equation*} 
+obviously doesn't have a solution since $1$ cannot be equal to $2$.
+:::
+Therefore, we need to answer to questions:
+- When does a given system of linear equations have a solution?
+- If the given system has a solution, how do we compute it?
+
+## 4.2 Kronecker-Capelli theorem
+The following theorem gives us a way of checking if the given system of linear equations does have or does not have a solution.
+
+:::{danger} Theorem (Kronecker - Capelli)
+:icon:false
+System of linear equations $AX = B$ has at least one solution if and only if 
+\begin{equation*}
+r(A) = r(A|B).
+\end{equation*}
+:::
+
+## 4.3 Gauss-Jordan method
+
+## 4.4 Input-output model
