@@ -311,7 +311,7 @@ Therefore, we have a system of two equations with two unknowns:
 \end{equation*}
 The solution of this system is given by
 \begin{equation*}
-Q_1 = 200, \quad Q_2 = 200.
+Q_1 = 200, \quad Q_3 = 200.
 \end{equation*}
 Hence, the vector of outputs is given by $Q = \begin{bmatrix}200 & 160 & 200\end{bmatrix}^T$ and from here it easily follows that the input-output table is given by
 \begin{equation*}
