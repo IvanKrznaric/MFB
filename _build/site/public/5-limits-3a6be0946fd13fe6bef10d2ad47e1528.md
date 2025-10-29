@@ -1,0 +1,21 @@
+# 5. Domains and limits of functions
+
+## 5.1 Domain of a function
+
+:::{tip} Definition
+:icon:false
+**Domain** of the function $f$ is the set of all real numbers $x$ for which that function is defined. Such as set is denoted by $\mathcal{D}_f.$
+:::
+
+:::{note} Problem 5.1
+Find the domains of the following functions:
+\begin{itemize}
+\item[a)] aaa
+\item[b)] bbb
+\end{itemize}
+:icon:false
+:::
+
+## 5.2 Composition of functions
+
+## 5.3 Limit of a function

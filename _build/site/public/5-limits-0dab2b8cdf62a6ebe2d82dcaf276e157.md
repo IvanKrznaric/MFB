@@ -23,7 +23,11 @@ Find the domains of the following functions:
 :icon:false
 Find the domains of the following functions:
 \begin{equation*}
-f(x) = \ln \left( \frac{x+1}{x-1} \right), \quad g(x) = \frac{1}{\sqrt{2-3x^4}}, \quad h(x) = x^2 e^{-2x} +e^3.
+\begin{split}
+a) \hspace{0.1 cm} f(x) &= \ln \left( \frac{x+1}{x-1} \right) \\
+b) \hspace{0.1 cm} g(x) &= \frac{1}{\sqrt{2-3x^4}} \\
+c) \hspace{0.1 cm} h(x) &= x^2 e^{-2x} +e^3.
+\end{split}
 \end{equation*}
 :::
 
@@ -108,7 +112,7 @@ Find the limit $\displaystyle \lim_{x \to \infty} \sqrt{x} (\sqrt{x+1}-\sqrt{x})
 Find the limit $\displaystyle \lim_{x \to 1} \frac{2x^2-6x+4}{3x^2-12x+9}.$
 :::
 
-In the following problem, we are going to use the following formula:
+In the following problem, we are going to be using the following formula:
 \begin{equation*}
 \lim_{x \to \infty} \left(1+ \frac{r}{x} \right)^{x} = e^r, \quad r \in \mathbb{R}
 \end{equation*}
@@ -117,9 +121,9 @@ Notice that, if $r = 1$ then the formula above gives us
 \begin{equation*}
 \lim_{x \to \infty}\left(1+\frac{1}{x} \right)^{x} = e,
 \end{equation*}
-where $e$ is the Euler's number $e = 2.7182818284590\dots$
+where $e$ is the Euler's number $e = 2.7182818284590\dots.$
 
-:::{attention} Euler's number and compound interest
+:::{seealso} Euler's number and compound interest
 Imagine that you deposited $p$ euros into a bank and let's suppose that the bank will offer you an annual interest rate that's equal to $r$ (for example, $r = 0.1$ means that the annual interest rate is $10$ percent). We are interested in the amount of money will we have after the interest has been paid out. 
 
 If the interest is paid out once a year, then we will have
@@ -130,13 +134,13 @@ a = p(1+r)
 If the interest is paid out twice a year, then we will have
 \begin{equation*}
 \begin{split}
-\text{after six months: } &a = p\left(1+\frac{r}{2}\right) \\
-\text{after twelve months: } &a = p\left(1+\frac{r}{2}\right) \cdot \left(1+\frac{r}{2}\right) = p\left(1+\frac{r}{2}\right)^2
+\text{after six months: } &a = p(1+\frac{r}{2}) \\
+\text{after twelve months: } &a = p(1+\frac{r}{2}) \cdot (1+\frac{r}{2}) = p(1+\frac{r}{2})^2
 \end{split}
 \end{equation*}
 Generalizing, if the interest is paid out $x$ times a year, then  at the end of the year we will have
 \begin{equation*}
-a = p\left(1+\frac{r}{x}\right)^x.
+a = p(1+\frac{r}{x})^x.
 \end{equation*}
 If the interest is being paid-out in very small time intervals - meaning quite a lot of times during a year - then $x$ is a very very big number and we can find the amount of money we will have at the end of the year by using the formula stated above:
 \begin{equation*}
