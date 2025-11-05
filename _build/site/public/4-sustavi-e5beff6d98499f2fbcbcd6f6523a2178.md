@@ -113,7 +113,7 @@ Throughout this section, we will be using the following notation:
 - **<span style = "color:green"> intermediate output </span>** $\dots Q_{ij}$
 - **<span style = "color:green"> technical coefficient </span>** $\dots a_{ij}$
 - **<span style = "color:green"> matrix of technical coefficients </span>** $\dots A = [a_{ij}]$
-- **<span style = "color:green"> technology matrix </span>** $\dots T = I - A$
+- technology matrix $\dots T = I - A$
 
 We are also going to be using the following formulas of the input-output model:
 :::{danger} Basic formulas for the input-output model

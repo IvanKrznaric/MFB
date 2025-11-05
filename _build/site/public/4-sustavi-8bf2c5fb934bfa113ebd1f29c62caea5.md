@@ -110,10 +110,10 @@ Throughout this section, we will be using the following notation:
 - **<span style = "color: green"> vector of outputs </span>** $\dots Q = \begin{bmatrix} Q_1 & \dots & Q_n\end{bmatrix}^T$
 - **<span style = "color:green"> final demand of the $i$-th sector </span>**$\dots q_i$
 - **<span style = "color:green"> vector of demands </span>** $\dots q = \begin{bmatrix} q_1 & \dots & q_n \end{bmatrix}^T$
-- **<span style = "color:green"> intermediate output </span>** $\dots Q_{ij}$
-- **<span style = "color:green"> technical coefficient </span>** $\dots a_{ij}$
-- **<span style = "color:green"> matrix of technical coefficients </span>** $\dots A = [a_{ij}]$
-- **<span style = "color:green"> technology matrix </span>** $\dots T = I - A$
+- intermediate output $\dots Q_{ij}$
+- technical coefficient $\dots a_{ij}$
+- matrix of technical coefficients $\dots A = [a_{ij}]$
+- technology matrix $\dots T = I - A$
 
 We are also going to be using the following formulas of the input-output model:
 :::{danger} Basic formulas for the input-output model

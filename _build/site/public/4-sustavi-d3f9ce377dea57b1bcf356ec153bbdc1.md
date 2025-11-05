@@ -19,7 +19,7 @@ Therefore, we need to answer to questions:
 ## 4.2 Kronecker-Capelli theorem
 The following theorem gives us a way of checking if the given system of linear equations does have or does not have a solution.
 
-:::{danger} <span style = "color: red"> Theorem (Kronecker - Capelli) </span>
+:::{danger} Theorem (Kronecker - Capelli)
 :icon:false
 System of linear equations $AX = B$ has at least one solution if and only if 
 \begin{equation*}
@@ -97,7 +97,7 @@ Number of solutions of a system is completely determined by the rank.
 :::
 
 ## 4.4 Input-output model
-In this section we are going to use all of the things we learned about matrices and systems of linear equations to study one important economic model called **<span style = "color:green"> the input-output model </span>**. We are going to use it to model a scenario in which we have different sectors of an economy that interact with each other, meaning that every sector consumes outputs of other sectors in order to produce its output. Alongside every sector consuming a part of outputs of all other sectors, each sector has its own demand which is just the amount of output of that sector that is not being used for further production, but rather for export.
+In this section we are going to use all of the things we learned about matrices and systems of linear equations to study one important economic model called **the input-output model**. We are going to use it to model a scenario in which we have different sectors of an economy that interact with each other, meaning that every sector consumes outputs of other sectors in order to produce its output. Alongside every sector consuming a part of outputs of all other sectors, each sector has its own demand which is just the amount of output of that sector that is not being used for further production, but rather for export.
 
 The assumptions of the input-output model are:
 - if the inputs into some sector increase $p$ times, then the output of that sector increases $p$ times as well
@@ -106,14 +106,14 @@ The assumptions of the input-output model are:
 Note that the first assumption is all about linearity, hence we use linear algebra to study this model.
 
 Throughout this section, we will be using the following notation:
-- **<span style = "color: green"> total output of the $i$-th sector </span>** $ \dots Q_i$
-- **<span style = "color: green"> vector of outputs </span>** $\dots Q = \begin{bmatrix} Q_1 & \dots & Q_n\end{bmatrix}^T$
-- **<span style = "color:green"> final demand of the $i$-th sector </span>**$\dots q_i$
-- **<span style = "color:green"> vector of demands </span>** $\dots q = \begin{bmatrix} q_1 & \dots & q_n \end{bmatrix}^T$
-- **<span style = "color:green"> intermediate output </span>** $\dots Q_{ij}$
-- **<span style = "color:green"> technical coefficient </span>** $\dots a_{ij}$
-- **<span style = "color:green"> matrix of technical coefficients </span>** $\dots A = [a_{ij}]$
-- **<span style = "color:green"> technology matrix </span>** $\dots T = I - A$
+- total output of the $i$-th sector $ \dots Q_i$
+- vector of outputs $\dots Q = \begin{bmatrix} Q_1 & \dots & Q_n\end{bmatrix}^T$
+- final demand of the $i$-th sector $\dots q_i$
+- vector of demands $\dots q = \begin{bmatrix} q_1 & \dots & q_n \end{bmatrix}^T$
+- intermediate output $\dots Q_{ij}$
+- technical coefficient $\dots a_{ij}$
+- matrix of technical coefficients $\dots A = [a_{ij}]$
+- technology matrix $\dots T = I - A$
 
 We are also going to be using the following formulas of the input-output model:
 :::{danger} Basic formulas for the input-output model
