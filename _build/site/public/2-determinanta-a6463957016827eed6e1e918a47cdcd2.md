@@ -41,7 +41,7 @@ Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't inv
 :::
 
 ## 2.2 Determinant of a matrix
-Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **<span style = "color:green"> The determinant </span>** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
+Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **The determinant** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
 :::{math}
 :numbered:false
 \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc.
@@ -94,7 +94,7 @@ Find the determinant of the matrix $A = \begin{bmatrix} 2 & -4 & 8 & 11 \\ -5 & 
 
 
 ### Elementary transformations
-As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **<span style = "color:blue"> elementary transformations </span>** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
+As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **elementary transformations** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
 
 :::{note} Problem 2.6
 :icon:false

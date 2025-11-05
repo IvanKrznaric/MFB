@@ -41,7 +41,7 @@ Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't inv
 :::
 
 ## 2.2 Determinant of a matrix
-Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **<span style = "color:green"> The determinant </span>** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
+Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **The determinant** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
 :::{math}
 :numbered:false
 \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc.
@@ -94,7 +94,7 @@ Find the determinant of the matrix $A = \begin{bmatrix} 2 & -4 & 8 & 11 \\ -5 & 
 
 
 ### Elementary transformations
-As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **<span style = "color:blue"> elementary transformations </span>** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
+As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **elementary transformations** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
 
 :::{note} Problem 2.6
 :icon:false
@@ -179,7 +179,7 @@ Another common mistake that students make on the Midterm/Exam is when they are a
 \begin{equation*}
 A^{-1} = \frac{1}{\text{det}(A)}A^\ast.
 \end{equation*}
-and move on. Of course, this answer is **<span style = "color:red"> wrong </span>**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
+and move on. Of course, this answer is **wrong**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
 \begin{equation*}
 A \cdot X = X \cdot A = I.
 \end{equation*}
@@ -188,7 +188,7 @@ It is very important - not just in this course, but generally - to know what are
 
 ## 2.4 Cramer's systems
 One of the main application of matrices we are going to see is revolving around solving system's of linear equations.
-:::{caution} <span style = "color:#8B4000"> Example </span>
+:::{caution} Example
 :icon: false
 The system
 \begin{equation*} \begin{cases} 2x-5y = 15 \\ 3x+y = 31. \end{cases} \end{equation*}
@@ -198,11 +198,11 @@ can be written in the matrix form as
 
 In general, every system can be written in matrix form as 
 \begin{equation*} AX = B, \end{equation*}
-where $A$ is **<span style = "color:green"> the matrix of coefficients </span>**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
+where $A$ is **the matrix of coefficients**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon: false
-We say that a system $AX = B$ of $n$ equations with $n$ unknows is **<span style = "color:green"> Cramer's system </span>** if $\text{det}(A) \neq 0.$
+We say that a system $AX = B$ of $n$ equations with $n$ unknows is **Cramer's system** if $\text{det}(A) \neq 0.$
 :::
 
 Cramer's systems are particularly easy to solve because their solutions are given by the formula

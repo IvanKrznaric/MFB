@@ -24,9 +24,9 @@ We can use this approach to define "divison" of matrices. If we would like to di
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
 :label:inverz
-Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **<span style = "color:green"> the inverse </span>** of the matrix $A$ if 
+Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **the inverse** of the matrix $A$ if 
 \begin{equation*} A \cdot X = X \cdot A = I .\end{equation*}
-In that case, we say that the matrix $A$ is **<span style = "color:green"> invertible </span>** or **<span style = "color:green"> regular </span>**. The inverse $X$ of the matrix $A$ is denoted by $A^{-1}.$
+In that case, we say that the matrix $A$ is **invertible** or **regular**. The inverse $X$ of the matrix $A$ is denoted by $A^{-1}.$
 :::
 
 :::{note}
@@ -41,7 +41,7 @@ Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't inv
 :::
 
 ## 2.2 Determinant of a matrix
-Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **<span style = "color:green"> The determinant </span>** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
+Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **The determinant** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
 :::{math}
 :numbered:false
 \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc.
@@ -94,7 +94,7 @@ Find the determinant of the matrix $A = \begin{bmatrix} 2 & -4 & 8 & 11 \\ -5 & 
 
 
 ### Elementary transformations
-As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **<span style = "color:blue"> elementary transformations </span>** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
+As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **elementary transformations** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
 
 :::{note} Problem 2.6
 :icon:false
@@ -120,7 +120,7 @@ Notice the main point of elementary transformations: when a matrix has a lot of 
 
 The most important theorem when talking about the determinant is the **Binet-Cauchy theorem**.
 
-:::{danger} <span style = "color:red"> Theorem (Binet-Cauchy) </span>
+:::{danger} Theorem (Binet-Cauchy)
 :icon:false
 :label:BCTHM
 Let $A,B$ be two $n \times n$ matrices. Then $\text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).$
@@ -138,7 +138,7 @@ A common mistake that students make when they are asked to state the [Binet-Cauc
 \begin{equation*}
 \text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).
 \end{equation*}
-That equation, without any additional assumptions is **<span style = "color:red"> false </span>**. What are $A,B?$ If they are matrices, what kind of matrices? If they are square matrices, can they be any square matrices or...? \
+That equation, without any additional assumptions is **false**. What are $A,B?$ If they are matrices, what kind of matrices? If they are square matrices, can they be any square matrices or...? \
 In the second homework, you have a question that deals specifically with this common mistake and shows you what the correct answer should be.
 :::
 ## 2.3. Matrix inversion
@@ -155,13 +155,13 @@ As we have mentioned in the introduction, the main point of the determinant is t
 
 Since we have just learned how to compute the determinant of a matrix, we know how to chekc whether or not a matrix has an inverse or not. Next thing we would like to know is how to explicitly compute the inverse of a matrix. 
 
-:::{tip} <span style = "color : #228B22"> Definition </span>
+:::{tip} Definition
 :icon:false
 Let $A = [a_{ij}] \in M_n$ be a square matrix. 
-- **<span style = "color:green"> The minor </span>** of an element $a_{ij}$ is the determinant of a matrix obtained by deleting the $i$-th row and the $j$-th column of the matrix $A$. That number is denoted by $M_{ij}$.
-- **<span style = "color:green"> The cofactor matrix </span>** is a $n \times n$ matrix $C = [c_{ij}],$ where 
+- **The minor** of an element $a_{ij}$ is the determinant of a matrix obtained by deleting the $i$-th row and the $j$-th column of the matrix $A$. That number is denoted by $M_{ij}$.
+- **The cofactor matrix** is a $n \times n$ matrix $C = [c_{ij}],$ where 
 \begin{equation*} c_{ij} = (-1)^{i+j}M_{ij} \end{equation*} 
-- **<span style = "color:green"> The adjoint </span>** of the matrix $A$ is the matrix $A^{\ast} = C^T.$
+- **The adjoint** of the matrix $A$ is the matrix $A^{\ast} = C^T.$
 :::
 Finally, the inverse of the matrix $A$ is given by the formula 
 \begin{equation*} A^{-1} = \frac{1}{\text{det}(A)}A^\ast.\end{equation*}
@@ -179,7 +179,7 @@ Another common mistake that students make on the Midterm/Exam is when they are a
 \begin{equation*}
 A^{-1} = \frac{1}{\text{det}(A)}A^\ast.
 \end{equation*}
-and move on. Of course, this answer is **<span style = "color:red"> wrong </span>**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
+and move on. Of course, this answer is **wrong**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
 \begin{equation*}
 A \cdot X = X \cdot A = I.
 \end{equation*}
@@ -188,7 +188,7 @@ It is very important - not just in this course, but generally - to know what are
 
 ## 2.4 Cramer's systems
 One of the main application of matrices we are going to see is revolving around solving system's of linear equations.
-:::{caution} <span style = "color:#8B4000"> Example </span>
+:::{caution} Example
 :icon: false
 The system
 \begin{equation*} \begin{cases} 2x-5y = 15 \\ 3x+y = 31. \end{cases} \end{equation*}
@@ -198,11 +198,11 @@ can be written in the matrix form as
 
 In general, every system can be written in matrix form as 
 \begin{equation*} AX = B, \end{equation*}
-where $A$ is **<span style = "color:green"> the matrix of coefficients </span>**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
+where $A$ is **the matrix of coefficients**, $X$ is the column-matrix of unknowns and $B$ is the column-matrix of the right-hand side of the system.
 
-:::{tip} <span style = "color : #228B22"> Definition </span>
+:::{tip} Definition
 :icon: false
-We say that a system $AX = B$ of $n$ equations with $n$ unknows is **<span style = "color:green"> Cramer's system </span>** if $\text{det}(A) \neq 0.$
+We say that a system $AX = B$ of $n$ equations with $n$ unknows is **Cramer's system** if $\text{det}(A) \neq 0.$
 :::
 
 Cramer's systems are particularly easy to solve because their solutions are given by the formula
