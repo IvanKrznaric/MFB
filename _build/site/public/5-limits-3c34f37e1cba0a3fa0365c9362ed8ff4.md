@@ -4,7 +4,7 @@
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
-**<span style = "color:green"> Domain </span>** of the function $f$ is the set of all real numbers $x$ for which that function is defined. Such as set is denoted by $\mathcal{D}_f.$
+**<span style = "coor:green"> Domain </span>** of the function $f$ is the set of all real numbers $x$ for which that function is defined. Such as set is denoted by $\mathcal{D}_f.$
 :::
 
 :::{note} Problem 5.1
@@ -31,7 +31,7 @@ f(x) = \ln \left( \frac{x+1}{x-1} \right), \quad g(x) = \frac{1}{\sqrt{2-3x^4}},
 ## 5.2 Composition of functions
 The main thing about functions is that you can plug numbers into the function, and the function returns back some value. But, numbers aren't the only thing that can be plugged-into functions.
 
-:::{caution} <span style = "color:#8B4000"> Example </span>
+:::{caution} Example
 :icon:false
 Let $f(x) = 3x-1$ and $g(x) = x^2 + 5.$ Then
 \begin{equation*}
@@ -47,7 +47,7 @@ g(f(x)) &= g(3x-1) \\ &= (3x-1)^2 + 5 \\ &= 9x^2-6x+6
 \end{equation*}
 :::
 
-The operation of pluggin-in one function inside another is called **<span style = "color:green"> composition of functions. </span>** When we are trying to recognize whether or not a given function is a composition of two or more functions, we are always moving from the "outside" to the "inside", where the "outside" function is, generally speaking, the one that appears first.
+The operation of pluggin-in one function inside another is called **composition of functions.** When we are trying to recognize whether or not a given function is a composition of two or more functions, we are always moving from the "outside" to the "inside", where the "outside" function is, generally speaking, the one that appears first.
 
 :::{note} Problem 5.3
 :icon: false
@@ -65,7 +65,7 @@ For each composition determine which function is the "outside" function and whic
 :::
 
 ## 5.3 Limit of a function
-Intuitively, **<span style = "color:green"> the limit </span>** of a function represents the "limiting" value of a function as the independent variable $x$ approaches a certain value, or gets arbitrarily large or small.
+Intuitively, **the limit** of a function represents the "limiting" value of a function as the independent variable $x$ approaches a certain value, or gets arbitrarily large or small.
 
 The main reason why we are studying limits of functions is so that we can understand the definition of the *derivative* of a function that we are going to be covering in the next chapter.
 
@@ -84,7 +84,7 @@ Find the limit $\displaystyle \lim_{x \to \infty} \frac{1}{\sqrt{x}}.$
 :::
 
 :::{figure} ./video/Limes2.mp4
-As $x$ gets arbitrarily large, the value of the function $\frac{1}{\sqrt{x}}$ gets closer and closer to $0$ - hence, the limit is $0.$
+As $x$ gets arbitrarily large, the value of the function $\frac{1}{\sqrt{x}}$ get closer and closer to $0$ - hence, the limit is $0.$
 :::
 
 In the previous problems, we could find the value of the limit by simply "plugging-in" the value $x$ approaches into the function. In the following problems, if we "plug-in" the value $x$ is approaching, we will get one of the following expressions:
@@ -119,11 +119,7 @@ Notice that, if $r = 1$ then the formula above gives us
 \end{equation*}
 where $e$ is the Euler's number $e = 2.7182818284590\dots$
 
-:::{figure} ./video/Limes_e.mp4
-As $x$ gets arbitrarily large, the value of the function $\left(1+\frac{1}{x}\right)^x$ gets closer and closer to $e.$
-:::
-
-:::{attention} <span style = "color:#8B4000"> Euler's number and compound interest </span>
+:::{attention} Euler's number and compound interest
 Imagine that you deposited $p$ euros into a bank and let's suppose that the bank will offer you an annual interest rate that's equal to $r$ (for example, $r = 0.1$ means that the annual interest rate is $10$ percent). We are interested in the amount of money will we have after the interest has been paid out. 
 
 If the interest is paid out once a year, then we will have
