@@ -76,7 +76,6 @@ The following formula tells us how to find derivative of compositions:
 f(g(x))' = f'(g(x)) \cdot g'(x). 
 \end{equation*}
 :::
-Therefore, in order to find the derivative of a composition of functions you move from the "outside" to the "inside" and write the derivatives as you go along.
 
 :::{note} Problem 6.6
 :icon: false

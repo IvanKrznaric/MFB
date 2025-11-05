@@ -28,10 +28,10 @@ Visual interpretation of the derivative - the derivative of a function $f$ at a 
 :::{danger} <span style = "color:red"> Basic rules for differentiation</span>
 :icon:false
 :class: dropdown
-\begin{align*}
+\begin{align}
 (f+g)' &= f' + g' & & & & & (c \cdot f)' &= c \cdot f' \\
 (f \cdot g)' &= f' \cdot g + f \cdot g' & & & & & \left( \frac{f}{g}\right)' &= \frac{f' \cdot g - f \cdot g'}{g^2} \\
-\end{align*}
+\end{align}
 :::
 
 :::{danger} <span style = "color:red"> Table of derivatives </span>
@@ -70,13 +70,9 @@ Find the derivative of the function $\displaystyle f(x) = \frac{2^x \cdot (5x+7)
 
 ## 6.3 Derivative of composition of functions
 The following formula tells us how to find derivative of compositions:
-:::{danger} <span style = "color:red"> Derivative of a composition of functions</span>
-:icon:false
 \begin{equation*}
 f(g(x))' = f'(g(x)) \cdot g'(x). 
 \end{equation*}
-:::
-Therefore, in order to find the derivative of a composition of functions you move from the "outside" to the "inside" and write the derivatives as you go along.
 
 :::{note} Problem 6.6
 :icon: false
