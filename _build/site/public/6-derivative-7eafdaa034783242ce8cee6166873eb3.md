@@ -20,7 +20,7 @@ is called **<span style = "color:green"> the derivative </span>** of the functio
 :::
 
 :::{figure} ./video/Derivative.mp4
-Visual interpretation of the derivative - the derivative of a function $f$ at a point $x$ is equal to the slope of the tangent line to the graph of the function $f$ at a point $x$.
+Visual representation of the derivative - note that the average rate of change is exactly the slope of the secant on the graph of the function. As $h$ becomes very very close to $0$, that secant is very very close to being a tangent to the graph at a given point.
 :::
 
 ## 6.2 Derivative of elementary functions
