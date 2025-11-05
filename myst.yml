@@ -20,6 +20,7 @@ project:
   - title: Part 2. Functions of one variable
     children:
     - file: 5-limits.md
+    - file: 6-derivative.md
 site:
   template: book-theme
   options:
