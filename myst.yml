@@ -9,7 +9,7 @@ project:
     - name: Ivan Krznarić
       affiliation: Faculty of Economics and Business; University of Zagreb
       email: ikrznaric@efzg.hr
-      #url: https://www.efzg.unizg.hr/ikrznaric
+      url: https://www.efzg.unizg.hr/ikrznaric
   toc:
   - file: Intro.md
   - title: Part 1. Linear algebra
