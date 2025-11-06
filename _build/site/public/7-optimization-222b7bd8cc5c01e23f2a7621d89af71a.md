@@ -1,0 +1,102 @@
+# 7. Local extrema. Intervals of monotonicity
+
+## 7.1 Introduction
+In the next three chapters, we are going to be dealing with various applications of the derivative of a function. In this chapter, we are going to see how to use the derivative in order to answer the following question:
+- How to find local extrema, i.e. local minimums/maximums of a given function?
+- How to find the intervals over which the given function is increasing/decreasing?
+- How to find the intervals over which the given function is convex/concave?
+
+The answers to all of these questions are going to be algorithmic in nature, meaning we will state the algorithm which will lead us to answers to the questions above. The main thing that we'll use to derive those algorithms is the relationship between the function $f$ and its derivatives.
+
+:::{figure} ./video/Optimizacija.mp4
+The relationship between the function $f$ and its derivatives.
+:::
+
+## 7.2 Local extrema
+:::{note} ⚙️ How to find the local extrema of a function $f$
+:icon:false
+1. Find the domain of the function $f$
+2. Find the stationary points, i.e. solve the equation $f'(x) = 0$
+3. Use the $2^{\text{nd}}$ derivative to determine which points are minimums and which are maximums.
+:::
+
+:::{note} Problem 7.1
+:icon: false
+Let $\displaystyle f(x) = e^x - x.$ Find the local extreme points and the corresponding extreme values.
+:::
+
+:::{note} Problem 7.2
+:icon: false
+Let $\displaystyle f(x) = \frac{x}{1+x^2}.$ Find the local extreme points and the corresponding extreme values.
+:::
+
+:::{note} Problem 7.3
+:icon: false
+Let $\displaystyle f(x) = \ln(1+x^4).$ Find the local extreme points and the corresponding extreme values.
+:::
+
+:::{note} Problem 7.4
+:icon: false
+Let $\displaystyle f(x) = \frac{x^2-2}{x} -3\ln(x).$ Find the local extreme points and the corresponding extreme values.
+:::
+
+:::{note} Problem 7.5
+:icon: false
+Let $\displaystyle f(x) = (x^2+2x^2)e^{-x}.$ Find the local extreme points and the corresponding extreme values.
+:::
+
+## 7.3 Intervals of monotonicity
+
+:::{note} ⚙️ How to find intervals of monotonicity of a function $f$
+:icon:false
+1. Find the domain of the function $f$
+2. Find the stationary points, i.e. solve the equation $f'(x) = 0$
+3. Make the table of the signs of the $1^{\text{st}}$ derivative $f'$ and read off the intervals.
+:::
+
+:::{note} Problem 7.6
+:icon: false
+Find the intervals over which the function $\displaystyle f(x) = \frac{x^2}{4-x} $ is increasing and decreasing.
+:::
+
+:::{note} Problem 7.7
+:icon: false
+Find the intervals over which the function $\displaystyle f(x) = \frac{1-\sqrt{x}}{1+\sqrt{x}}$ is increasing and decreasing.
+:::
+
+:::{note} Problem 7.8
+:icon: false
+Find the intervals over which the function $\displaystyle f(x) = (2x^2+x)e^{-x}$ is increasing and decreasing.
+:::
+
+:::{note} Problem 7.9
+:icon: false
+Find the intervals over which the function 
+\begin{equation*}
+f(x) = e^{-x}(x^2+1) + \frac{(x-1)^3}{3}
+\end{equation*}
+ is increasing and decreasing.
+:::
+
+## 7.4 Convexity and concavity
+
+:::{note} ⚙️ How to find intervals of convexity of a function $f$
+:icon:false
+1. Find the domain of the function $f$
+2. Find the $2^{\text{nd}}$ derivative $f''(x)$ and solve the equation $f''(x) = 0$
+3. Make the table and read off the intervals.
+:::
+
+:::{note} Problem 7.10
+:icon: false
+Find the intervals over which the function
+\begin{equation*}
+f(x) = \frac{1}{6}x^3 - \frac{1}{2}x^2 + 5x + 7
+\end{equation*}
+is convex and concave.
+:::
+
+:::{note} Problem 7.11
+:icon: false
+Find the intervals over which the function $\displaystyle f(x) = \frac{\ln(x)}{x}$ is convex and concave.
+:::
