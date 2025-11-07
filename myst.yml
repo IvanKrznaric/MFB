@@ -23,6 +23,7 @@ project:
     - file: 5-limits.md
     - file: 6-derivative.md
     - file: 7-differential.md
+    - file: 8-optimization.md
 site:
   template: book-theme
   options:
