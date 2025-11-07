@@ -1,4 +1,4 @@
-# 7. Optimization of functions of one variable
+# 7. Local extrema. Intervals of monotonicity
 
 ## 7.1 Introduction
 In the next three chapters, we are going to be dealing with various applications of the derivative of a function. In this chapter, we are going to see how to use the derivative in order to answer the following question:

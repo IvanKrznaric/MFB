@@ -1,4 +1,4 @@
-# 7. Optimization of functions of one variable
+# 7. Local extrema. Intervals of monotonicity
 
 ## 7.1 Introduction
 In the next three chapters, we are going to be dealing with various applications of the derivative of a function. In this chapter, we are going to see how to use the derivative in order to answer the following question:
@@ -64,7 +64,7 @@ Find the intervals over which the function $\displaystyle f(x) = \frac{x^2}{4-x}
 :::
 
 :::{figure} ./slike/IntMon.png
-Graph of the function $\displaystyle f(x) = \frac{x^2}{4-x}.$
+
 :::
 
 :::{note} Problem 7.7
@@ -108,11 +108,11 @@ Keep in mind what is defining property of something, and what is a consequence o
 
 :::{note} Problem 7.10
 :icon: false
-Find the intervals over which the function $\displaystyle f(x) = x^3-4x$ is convex and concave.
-:::
-
-:::{figure} ./slike/Conv.png
-Graph of the function $\displaystyle f(x) = x^3-4x.$ 
+Find the intervals over which the function
+\begin{equation*}
+f(x) = \frac{1}{6}x^3 - \frac{1}{2}x^2 + 5x + 7
+\end{equation*}
+is convex and concave.
 :::
 
 :::{note} Problem 7.11

@@ -22,7 +22,7 @@ project:
     children:
     - file: 5-limits.md
     - file: 6-derivative.md
-    - file: 7-optimization.md
+    - file: 7-differential.md
 site:
   template: book-theme
   options:
