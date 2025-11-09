@@ -4,7 +4,6 @@ project:
   license: CC-BY-4.0
   open_access: true
   title: Mathematics for Business
-  description: Here you will find the materials for the seminars
   author: 
     - name: Ivan Krznarić
       affiliation: Faculty of Economics and Business; University of Zagreb
@@ -28,7 +27,7 @@ site:
   template: book-theme
   options:
     outline_maxdepth : 1
-    style: ./css/footer.css
+    style: ./css/styles.css
   parts:
     footer: footer.md
 

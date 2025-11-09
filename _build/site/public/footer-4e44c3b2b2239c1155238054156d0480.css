@@ -1,0 +1,127 @@
+/*
+ * This file adds custom CSS to improve the footer layout. It is not required
+ * for use of landing-pages
+ */
+html,
+body {
+  height: 100%;
+}
+body { /* definicije stila za lijevi drop-down menu*/
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+/* Ovo su neke moje custom postavke*/
+.fancy-h2 {
+  position: relative;
+
+  /* overline (black) */
+  text-decoration-line: overline;
+  text-decoration-color: black;
+  text-decoration-thickness: 2px;
+  text-decoration-skip-ink: none;
+
+  /* leave space for the two underline bars */
+  padding-bottom: 0.6rem;
+}
+
+/* first underline (blue) just below the text */
+.fancy-h2::before,
+.fancy-h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+}
+
+.fancy-h2::before {
+  bottom: 0.30rem;       /* closer to text */
+  background: blue;
+}
+
+/* second underline (black) below the blue one */
+.fancy-h2::after {
+  bottom: 0;
+  background: black;
+}
+
+/*--------------------------------------*/
+
+.article.content { /* ovdje mogu definirati stil za glavni dio stranice */
+  /* Override 100vh from myst-theme:styles/typography.css so content div
+   * doesn't push the footer offscreen.
+   */
+  min-height: 0vh;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  h1 {
+    color: red;
+    text-decoration-line: underline;
+    text-decoration-thickness: 7px;
+  }
+  h2 {
+    color: blue;
+    text-decoration-line: underline;
+    text-decoration-thickness: 4px ;
+  }
+  h3 {
+    color: purple;
+  }
+}
+
+.footer { /* definicije stila za footer */
+  /* Make footer "sticky" to page bottom (also the above flex rules), per
+   * the flexbox strategy described here:
+   * 	https://css-tricks.com/couple-takes-sticky-footer/#aa-there-is-flexbox
+   * and here:
+   *    https://philipwalton.github.io/solved-by-flexbox/demos/sticky-footer/
+   * This solution does not require hardcoding a fixed footer height in the
+   * style rules.
+   */
+  flex-shrink: 0;
+  background: white;
+  color: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  /* Outer content grid */
+  & .outer-grid {
+    /* spacer, project description, spacer, link columns, spacer */
+    grid-template-columns: 3fr 3fr 4fr;
+    align-items: center;
+    margin-bottom: 0rem;
+
+    & li {
+      list-style: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    & .outer-grid {
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
+  }
+
+  /* Heading colours */
+  & a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+  }
+
+  & h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}

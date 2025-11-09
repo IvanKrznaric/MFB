@@ -1,0 +1,97 @@
+/*
+ * This file adds custom CSS to improve the footer layout. It is not required
+ * for use of landing-pages
+ */
+html,
+body {
+  height: 100%;
+}
+body { /* definicije stila za lijevi drop-down menu*/
+  display: flex;
+  flex-direction: column;
+  color: black;
+}
+
+
+.article.content { /* ovdje mogu definirati stil za glavni dio stranice */
+  min-height: 0vh;
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+  h1 {
+    color: red;
+    text-decoration: blue underline;
+    text-decoration-thickness: 7px;
+    padding-top: 0.6rem;
+    padding-bottom: 1em; /*vertikalni razmak između naslova i prvog sljedećeg paragrafa*/
+  }
+
+  h2 {
+    display: flex;
+    float: left;
+  }
+  .h2-num {
+    background: lightblue;
+    color:darkblue;
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-right: 4px;
+  }
+  .h2-text {
+    background: darkblue;
+    color: white;
+    padding: 5px 50px;
+    border-radius: 4px;
+    margin-left: 1px;
+  }
+  h3 {
+    color: purple;
+    text-align: center;
+  }
+}
+
+.footer { /* definicije stila za footer */
+  flex-shrink: 0;
+  background: white;
+  color: black;
+  padding-left: 2rem;
+  padding-right: 2rem;
+
+  padding-left: 3.5rem;
+  padding-right: 3.5rem;
+
+  /* Outer content grid */
+  & .outer-grid {
+    /* spacer, project description, spacer, link columns, spacer */
+    grid-template-columns: 3fr 3fr 4fr;
+    align-items: center;
+    margin-bottom: 0rem;
+
+    & li {
+      list-style: none;
+    }
+  }
+
+  @media (max-width: 640px) {
+    & .outer-grid {
+      grid-template-columns: 1fr;
+      justify-items: start;
+    }
+  }
+
+  /* Heading colours */
+  & a,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: black;
+  }
+
+  & h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+}
