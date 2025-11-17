@@ -124,10 +124,17 @@ Using the definition, find the derivative of the function $\displaystyle f(x) = 
 
 :::{note} Problem 6.14
 :icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = x^3.$
+Using the definition, find the derivative of the function $\displaystyle f(x) = \sqrt{x}.$
 :::
+
+## <span class = "h2-num">6.5 </span><span class = "h2-text"> Higher-order derivatives </span>
 
 :::{note} Problem 6.15
 :icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = \sqrt{x}.$
+Find the first, second and the third derivative of the function $f(x) = 4x \cdot \ln(x).$ 
+:::
+
+:::{note} Problem 6.16
+:icon: false
+Find the first, second and the third derivative of the function $\displaystyle f(x) = \frac{2+x}{2-x}.$ 
 :::
