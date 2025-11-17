@@ -46,7 +46,7 @@ Let $\displaystyle f(x) = \frac{x^2-2}{x} -3\ln(x).$ Find the local extreme poin
 
 :::{note} Problem 8.5
 :icon: false
-Let $\displaystyle f(x) = (x^2+2x^2)e^{-x}.$ Find the local extreme points and the corresponding extreme values.
+Let $\displaystyle f(x) = (x+2x^2)e^{-x}.$ Find the local extreme points and the corresponding extreme values.
 :::
 
 ## <span class = "h2-num">8.3 </span><span class = "h2-text"> Intervals of monotonicity </span>
