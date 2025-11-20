@@ -1,0 +1,16 @@
+# 9. Elasticity and economic quantities
+
+## <span class = "h2-num">9.1 </span><span class = "h2-text"> Total, average and marginal functions </span>
+In this section, we are going to use the following notation:
+- **<span style = "color: green">quantity of production </span>** $\dots Q$
+- **<span style = "color: green">price</span>** $\dots p$
+- **<span style = "color: green">total cost function </span>** $\dots C(Q)$
+- **<span style = "color: green">total revenue function </span>** $\dots R(Q)$
+- **<span style = "color: green">profit function </span>** $\dots \Pi(Q) = R(Q) - C(Q)$
+- **<span style = "color: green">marginal cost function </span>** $\dots MC(Q) = T'(Q)$
+- **<span style = "color: green">marginal revenue function </span>** $\dots MR(Q) = R'(Q)$
+- **<span style = "color: green">average cost function</span>** $\displaystyle \dots AC(Q) = \frac{C(Q)}{Q}$
+- **<span style = "color: green">average revenue function </span>** $\displaystyle \dots AR(Q) = \frac{R(Q)}{Q}$
+
+
+## <span class = "h2-num">9.2 </span><span class = "h2-text"> Elasticity </span>
