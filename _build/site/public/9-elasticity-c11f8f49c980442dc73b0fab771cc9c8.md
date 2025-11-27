@@ -145,7 +145,7 @@ E_{f,x} &= \frac{x}{f} \cdot f' \\
 &= 1+x(t+1).
 \end{split}
 \end{equation*}
-At the level $x = 1,$ we have $E_{f,x}(1) = t+2.$
+At the level $x = 1$ we have $E_{f,x}(1) = t+2.$
 
 Now, we want to absolute value of the coefficient of elasticity to be less than $1$, so:
 \begin{equation*}
