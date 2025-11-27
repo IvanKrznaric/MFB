@@ -7,7 +7,7 @@ In this section, we are going to use the following notation:
 - **<span style = "color: green">total cost function </span>** $\dots C(Q)$
 - **<span style = "color: green">total revenue function </span>** $\dots R(Q)$
 - **<span style = "color: green">profit function </span>** $\dots \Pi(Q) = R(Q) - C(Q)$
-- **<span style = "color: green">marginal cost function </span>** $\dots MC(Q) = C'(Q)$
+- **<span style = "color: green">marginal cost function </span>** $\dots MC(Q) = T'(Q)$
 - **<span style = "color: green">marginal revenue function </span>** $\dots MR(Q) = R'(Q)$
 - **<span style = "color: green">average cost function</span>** $\displaystyle \dots AC(Q) = \frac{C(Q)}{Q}$
 - **<span style = "color: green">average revenue function </span>** $\displaystyle \dots AR(Q) = \frac{R(Q)}{Q}$
@@ -43,7 +43,7 @@ where the variable $x$ denotes the amount of computing power they are using to p
 
 ````{solution} P93
 :class:dropdown
-Since the profit is equal to the difference of the revenue and the cost, we have
+Since the profit equal to the difference of the revenue and the cost, we have
 \begin{equation*}
 \Pi(x) = e^{-x+13} \cdot \left( (x-14)^2+1\right) + \frac{x^3}{3} + 225x - 15x^2.
 \end{equation*}
