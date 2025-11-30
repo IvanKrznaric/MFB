@@ -24,6 +24,9 @@ project:
     - file: 7-differential.md
     - file: 8-optimization.md
     - file: 9-elasticity.md
+  - title: Part 3. Functions of several variables
+    children:
+    - file: 10-partials.md
 site:
   template: book-theme
   options:
