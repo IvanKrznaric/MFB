@@ -1,0 +1,54 @@
+# 11. Homogeneous functions
+
+## <span class = "h2-num">11.1 </span><span class = "h2-text"> Homogeneous functions </span>
+
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon: false
+We say that a function $f(x_1, \dots, x_n)$ is **<span style = "color:green">homogeneous</span>** if 
+\begin{equation*}
+f(\lambda x_1, \dots, \lambda x_n) = \lambda^\alpha \cdot f(x_1, \dots, x_n),
+\end{equation*}
+where $\alpha \in \mathbb{R}$ is some number, which we call **<span style = "color:green">degree of homogeneity.</span>**
+:::
+
+**<span style = "color: magenta">Interpretation </span>** of the degree of homogeneity is that if all variables increase by $1\%,$ then the function $f$ will change its value by approximately $\alpha \%.$
+
+:::{note} Problem 11.1
+:icon: false
+Check whether or not the function $\displaystyle f(x,y) = x^2 + 2xy + 3y^2$ is homogeneous.
+:::
+
+:::{note} Problem 11.2
+:icon: false
+Check whether or not the function $\displaystyle f(x,y,z) = 2x \cdot \ln\left(\frac{z}{y}\right)$ is homogeneous.
+:::
+
+:::{note} Problem 11.3
+:icon: false
+The Cobb-Douglas production function is given as
+\begin{equation*}
+Q(L,K) = c L^a L^b,
+\end{equation*}
+where $a,b,c$ are just some constants. Check whether or nor the Cobb-Douglas production function is homogeneous.
+:::
+
+:::{note} Problem 11.4
+:icon: false
+Let the Cobb-Douglas function be given as 
+\begin{equation*}
+Q(L,K) = 0.2 L^{0.3} K^{0.6}.
+\end{equation*}
+If both variables $L,K$ increase by $5\%,$ by how much will the production function $Q$ change its value?
+:::
+
+:::{note} Problem 11.5
+:icon: false
+Let $\displaystyle f(x,y) = x \cdot \sqrt[3]{\frac{x^4 + 5x^2y^2+4y^4}{2x+y}}.$ <br>
+For how many percent will the value of the function $f$ change is both of the variables $x,y$ decrease by $7\%?$
+:::
+
+## <span class = "h2-num">11.2 </span><span class = "h2-text">Partial elasticities </span>
+
+## <span class = "h2-num">11.3 </span><span class = "h2-text">Euler's Theorem</span>
+
+
