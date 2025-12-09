@@ -29,7 +29,7 @@ The Cobb-Douglas production function is given as
 \begin{equation*}
 Q(L,K) = c L^a K^b,
 \end{equation*}
-where $a,b,c$ are just some constants. Check whether or nor the Cobb-Douglas production function is homogeneous.
+where $a,b,c$ are just some constants. Check whether or not the Cobb-Douglas production function is homogeneous.
 :::
 
 :::{note} Problem 11.4
