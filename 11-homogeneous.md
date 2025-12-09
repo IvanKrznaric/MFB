@@ -27,7 +27,7 @@ Check whether or not the function $\displaystyle f(x,y,z) = 2x \cdot \ln\left(\f
 :icon: false
 The Cobb-Douglas production function is given as
 \begin{equation*}
-Q(L,K) = c L^a L^b,
+Q(L,K) = c L^a K^b,
 \end{equation*}
 where $a,b,c$ are just some constants. Check whether or nor the Cobb-Douglas production function is homogeneous.
 :::
@@ -84,7 +84,7 @@ Based on the value of the cross-price elasticities, we have the following catego
 
 :::{note} Problem 11.7
 :icon: false
-There are two goods on market, whose prices are $p_1, p_2$ respectively. The demand for one of those goods is given by
+There are two goods $A$ and $B$ on the market, whose prices are $p_1, p_2$ respectively. The demand for one of those goods is given by
 \begin{equation*}
 q(p_1, p_2) = \frac{1}{2}p_1^2 + \frac{5}{p_2}.
 \end{equation*}
