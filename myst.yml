@@ -28,6 +28,7 @@ project:
     children:
     - file: 10-partials.md
     - file: 11-homogeneous.md
+    - file: 12-optimization-2-var.md
 site:
   template: book-theme
   options:
