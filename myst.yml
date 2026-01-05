@@ -29,6 +29,9 @@ project:
     - file: 10-partials.md
     - file: 11-homogeneous.md
     - file: 12-optimization-2-var.md
+  - title: Part 4. Integrals
+    children:
+    - file: 13-indefinite-integrals.md
 site:
   template: book-theme
   options:
