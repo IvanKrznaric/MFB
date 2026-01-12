@@ -1,0 +1,6 @@
+# 15. Differential equations
+
+## <span class = "h2-num">15.1 </span><span class = "h2-text"> Introduction </span>
+When we were in elementary school, we were taught how to solve linear equations like $-2x+17 = 8x-13.$
+
+## <span class = "h2-num">15.2 </span><span class = "h2-text"> Solving differential equations </span>

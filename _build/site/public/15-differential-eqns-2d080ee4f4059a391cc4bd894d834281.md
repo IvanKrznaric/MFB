@@ -1,0 +1,22 @@
+# 15. Differential equations
+
+## <span class = "h2-num">15.1 </span><span class = "h2-text"> Introduction </span>
+When we were in elementary school, we were taught how to solve linear equations like
+\begin{equation*}
+-2x+17 = 8x-13.
+\end{equation*}
+The algorithm started with us moving all of the unknows to the one side, all of the knows to the other side and then explicitly solving the equation for $x$. In what follows, we will introduce a new kind of an equation and then we will try and see which of the steps from the algorithm for solving linear equations can be used to solve this new type of an equation.
+
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon: false
+**<span style = "color : green"> A differential equation </span>** is any equation that is given in terms of the derivative of an unknown function $y$ and independent variable $x$.
+:::
+
+:::{caution} Example
+:icon: false
+- Equation $y' = 7$ is a differential equation since it is given in terms of the derivative of some unknown function $y$
+- Equation $x \cdot y' = 2\sqrt{x} - 1$ is a differential equation since it is given in terms of the derivative of some unknown function $y$
+- Equation $y^2 = 9$ is not a differential equation sice it is not given in terms of the derivative of some unknown function
+:::
+
+## <span class = "h2-num">15.2 </span><span class = "h2-text"> Solving differential equations </span>
