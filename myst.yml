@@ -32,6 +32,7 @@ project:
   - title: Part 4. Integrals
     children:
     - file: 13-indefinite-integrals.md
+    - file: 14-definite-integrals.md
 site:
   template: book-theme
   options:
