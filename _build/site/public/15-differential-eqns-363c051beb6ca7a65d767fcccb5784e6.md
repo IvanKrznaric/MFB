@@ -62,7 +62,7 @@ When solving linear equations, then there is only one possible solution (for exa
 \begin{equation*}
 y(x) = 7x + 1, \quad y(x) = 7x + 100, \quad y(x) = 7x - 1013
 \end{equation*}
-are also its solutions since they all satisfy $y' = 7$. Therefore, adding a constant to a solution does not affect the result, and that is indicated by writing "$+C$" in the solution.
+are also its solutions since they all satisfy $y' = 7$. Therefore, adding a constant to a solution of a differential equations does not affect the result, and that is indicated by "$+C$" in the solution.
 :::
 
 ## <span class = "h2-num">15.2 </span><span class = "h2-text"> Solving differential equations </span>
