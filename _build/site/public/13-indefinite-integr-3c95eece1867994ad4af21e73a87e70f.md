@@ -271,12 +271,13 @@ In the same way as with subsitution method, we can use integration by parts to r
 When computing indefinite integrals, the first and the most important step is to know which of the three methods we need to use in order to compute the integral. To that end, the following simple chart illustrates the thought process that can be applied to figure that out:
 ```{mermaid}
 flowchart TD
-A[Can I write the function as a power of x?] -- yes  --> B
-B[Use direct integration]
-A -- no --> C
-C["Can I compute the integral if it only had one variable in: \n#8226; the denominator? \n#8226; the square root? \n#8226; the exponent? \n <br>"] -- yes --> D
-D[Use substitution method]
-C -- no --> E
-E[Use integration by parts]
+A[How to compute the given integral?] --> B
+B[Can I write the function as a power of x?] -- yes  --> C
+C[Use direct integration]
+B -- no --> D
+D["Can I compute the integral if it only had one variable in: \n#8226; the denominator? \n#8226; the square root? \n#8226; the exponent? \n hhh"] -- yes --> E
+E[Use substitution method]
+D -- no --> F
+F[Use integration by parts]
 ```
 :::
