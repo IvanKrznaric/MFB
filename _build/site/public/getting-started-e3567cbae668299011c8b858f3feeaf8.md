@@ -37,10 +37,10 @@ In order to help you figure out which parts you need to revise if you are not co
     - $e^x \cdot (7x-4) = 0 \implies x = \frac{4}{7}$
     - $\ln(7x-13) = 2 \implies x = \frac{e^2+13}{7}$
 4. determining the domains of functions like
-    - $f(x) = \frac{5x}{x^2-1} \implies x \neq \pm 1$
-    - $f(x) = \sqrt{5x - 100} \implies x \geq 20$
-    - $f(x) = e^{7x-1} \implies x \in \mathbb{R}$
-    - $f(x) = \ln(4x+20) \implies x > -5$
+    - $f(x) = \frac{5x}{x^2-1}$
+    - $f(x) = \sqrt{5x - 100}$
+    - $f(x) = e^{7x-1}$
+    - $f(x) = \ln(4x+20)$
 
 If you are comfortable with working with the things mentioned above - excellent, you probably have a solid background in mathematics needed for the course! On the other hand, if one or more mathematical expressions above looks scary to you or you are not entirely sure how we got from the beginning of the line to its end, I **strongly** suggest you brush up on your high-school mathematical skills - the sooner, the better. You can contact me as well if you need help with that.
 

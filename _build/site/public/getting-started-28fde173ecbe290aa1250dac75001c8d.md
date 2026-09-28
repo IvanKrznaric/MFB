@@ -33,14 +33,14 @@ In order to help you figure out which parts you need to revise if you are not co
     - $ \displaystyle \frac{x-3}{x+11} \cdot \frac{x^2 - 121}{x+5} = \frac{x-3}{x+11} \cdot \frac{(x-11)(x+11)}{x+5} = \frac{(x-3)(x - 11)}{x+5}$
 3.  solving equations like
     - $(x^2+1) \cdot (x^2 + 7x + 12 ) = 0 \implies x_1 = -3, \quad x_2 = -4$
-    - $\displaystyle \frac{x-7}{x+1} = 0 \implies x = 7$
-    - $e^x \cdot (7x-4) = 0 \implies x = \frac{4}{7}$
-    - $\ln(7x-13) = 2 \implies x = \frac{e^2+13}{7}$
+    - $\displaystyle \frac{x-7}{x+1} = 0$
+    - $e^x \cdot (7x-4) = 0$
+    - $\ln(7x-13) = 2$
 4. determining the domains of functions like
-    - $f(x) = \frac{5x}{x^2-1} \implies x \neq \pm 1$
-    - $f(x) = \sqrt{5x - 100} \implies x \geq 20$
-    - $f(x) = e^{7x-1} \implies x \in \mathbb{R}$
-    - $f(x) = \ln(4x+20) \implies x > -5$
+    - $f(x) = \frac{5x}{x^2-1}$
+    - $f(x) = \sqrt{5x - 100}$
+    - $f(x) = e^{7x-1}$
+    - $f(x) = \ln(4x+20)$
 
 If you are comfortable with working with the things mentioned above - excellent, you probably have a solid background in mathematics needed for the course! On the other hand, if one or more mathematical expressions above looks scary to you or you are not entirely sure how we got from the beginning of the line to its end, I **strongly** suggest you brush up on your high-school mathematical skills - the sooner, the better. You can contact me as well if you need help with that.
 
