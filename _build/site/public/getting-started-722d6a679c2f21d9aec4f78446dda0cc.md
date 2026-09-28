@@ -16,7 +16,7 @@ There are a couple of reasons why the "theory" wasn't that big of a part during 
 - there wasn't enough time to cover both the theory and the problems in the amount of maths classes you had in your schedule,
 - it was more important to teach you how to be able to deal with the basic mathematical concepts rather than focusing on the formalities behind them.
 
-But since now you are involved in university-level education, you are expected to know the definitions of the apstract objects you are working with, why a particular property or a formula holds etc. That's why you are, in part, being taught precisely that and that's why the "theory" is an integral part of the course that is present both in your schedule and the midterms/exams.
+But since now you are involved in university-level education, you are expected to know the definitions of the apstract objects you are working with, why a particular property or a formula holds etc. That's why you are, in part, being taught precisely that and that's why the "theory" is an integral part of the course.
 
 ## Necessary prerequisites
 
