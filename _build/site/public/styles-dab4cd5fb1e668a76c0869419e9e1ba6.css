@@ -50,8 +50,7 @@ body {
   /* h3 heading*/
   h3 {
     color: purple;
-    text-decoration: underline;
-    text-decoration-color: purple;
+    border-bottom: 2px solid silver;
     /*text-align: center;*/
   }
 }
