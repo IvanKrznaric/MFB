@@ -16,10 +16,10 @@ There are a couple of reasons why the "theory" wasn't that big of a part during 
 - there wasn't enough time to cover both the theory and the problems in the amount of maths classes you had in your schedule,
 - it was more important to teach you how to be able to deal with the basic mathematical concepts rather than focusing on the formalities behind them.
 
-But since now you are involved in university-level education, you are expected to know the definitions of the apstract objects you are working with, why a particular property or a formula holds and how to prove your claims. That's why you are, in part, being taught precisely that and that's why the "theory" is an integral part of the course that is present both in your schedule and the midterms/exams.
+But since now you are involved in university-level education, you are expected to know the definitions of the apstract objects you are working with, why a particular property or a formula holds etc. That's why you are, in part, being taught precisely that and that's why the "theory" is an integral part of the course that is present both in your schedule and the midterms/exams.
 
 ## Necessary prerequisites
-In order to be able to cover all of the things intended in this course, we are going to be assuming that you are comfortable working with some of the mathematical concepts you were taught previously. Past experiences have taught me that there is a decent number of students who have serious gaps from their high-school math education and without taking the time and the effort to fill those gaps you are simply going to have a much harder time learning the material for this course and passing it. 
+In order to be able to cover all of the things intended in this course, we are going to be assuming that you are comfortable working with some of the mathematical concepts you were taught previously. Now, past experiences have taught me that there is a decent number of students who have serious gaps from their high-school math education and without taking the time and the effort to fill those gaps you are simply going to have a much harder time learning the material for this course and passing it. 
 
 In order to help you figure out which parts you need to revise if you are not confident in your high-school knowledge of mathematics, below is a brief list of things **all** students should be comfortable with:
 
@@ -42,8 +42,6 @@ In order to help you figure out which parts you need to revise if you are not co
     - $f(x) = \sqrt{5x - 100}$
     - $f(x) = e^{7x-1}$
     - $f(x) = \ln(4x+20)$
-
-If you are comfortable with working with the things mentioned above - congratulations, you probably have a solid background in mathematics needed for the course! On the other hand, if one or more mathematical expressions above looks scary to you or you are not entirely sure how we got from the beginning of the line to its end, I **strongly** suggest you brush up on your high-school mathematical skills - the sooner, the better. You can contact me as well if you need help with that.
 
 ## Midterms vs. exams
 There is one more major difference between high-school and university, and that's concerning the way you can pass the course.

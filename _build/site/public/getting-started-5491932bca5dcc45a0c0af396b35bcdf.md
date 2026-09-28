@@ -43,8 +43,6 @@ In order to help you figure out which parts you need to revise if you are not co
     - $f(x) = e^{7x-1}$
     - $f(x) = \ln(4x+20)$
 
-If you are comfortable with working with the things mentioned above - congratulations, you probably have a solid background in mathematics needed for the course! On the other hand, if one or more mathematical expressions above looks scary to you or you are not entirely sure how we got from the beginning of the line to its end, I **strongly** suggest you brush up on your high-school mathematical skills - the sooner, the better. You can contact me as well if you need help with that.
-
 ## Midterms vs. exams
 There is one more major difference between high-school and university, and that's concerning the way you can pass the course.
 
