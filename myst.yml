@@ -10,7 +10,7 @@ project:
       email: ikrznaric@efzg.hr
       url: https://www.efzg.unizg.hr/ikrznaric
   toc:
-  - file: Intro.md
+  - file: intro.md
   - file: getting-started.md
   - title: Part 1. Linear algebra
     children:
