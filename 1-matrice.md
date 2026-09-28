@@ -93,7 +93,7 @@ Write out a matrix $A = [a_{ij}]$ of order $3 \times 4$ such that $a_{ij} = i^2 
 Given a matrix $A$ of order $m \times n,$ its **<span style = "color:green"> transpose matrix</span>** is the matrix of order $n \times m$ obtained from the matrix $A$ by interchanging its rows and columns. Such a matrix is denoted by $A^T.$
 :::
 
-:::{note} Problem 1.7
+:::{note} Problem 1.3
 :icon:false
 Find the transpose of the matrix $A = \begin{bmatrix} 2 & 3 & 6 & 7 & 8 \\ 4 & 3 & 2 & 1 & 0\end{bmatrix}.$
 :::
@@ -110,7 +110,7 @@ A square matrix is called
 - a **<span style = "color:green"> scalar matrix </span>** if it is a diagonal matrix whose elements on the main diagonal all have the same value.
 :::
 
-:::{note} Problem 1.3
+:::{note} Problem 1.4
 :icon:false
 Check whether or not the following matrices are diagonal, scalar or neither of the two:
 :::{math}
@@ -133,7 +133,7 @@ A square matrix $A = [a_{ij}]$ is called:
 - an **<span style = "color:green"> antisymmetric matrix </span>** if $A^T = -A$.
 :::
 
-:::{note} Problem 1.4
+:::{note} Problem 1.5
 :icon: false
 Check whether or not the following matrices are symmetric, antisymmetric or neither of the two:
 \begin{equation*}
@@ -141,7 +141,7 @@ A = \begin{bmatrix} 0 & 2 & 8 \\ 2 & \pi & e^2 \\ 8 & e^2 & \sqrt[4]{3} \end{bma
 \end{equation*}
 :::
 
-:::{note} Problem 1.5
+:::{note} Problem 1.6
 :icon:false
 Write out the missing elements so that the resulting matrix is antisymmetric:
 \begin{equation*}
@@ -156,7 +156,7 @@ A square matrix $A = [a_{ij}]$ is called:
 - a **<span style = "color:green"> lower triangular matrix </span>** if $a_{ij} = 0$ for all $i < j$
 :::
 
-:::{note} Problem 1.6
+:::{note} Problem 1.7
 :icon:false
 Write down the following matrices and determine which one is an upper triangular and which one is lower triangular matrix:
 - $U = [u_{ij}]$ of order $3 \times 3$ such that $u_{ij} = \begin{cases} i^3, i \leq j \\ 0, i > j\end{cases}$
