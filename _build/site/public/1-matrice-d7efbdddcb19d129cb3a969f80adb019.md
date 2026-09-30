@@ -215,7 +215,7 @@ Find the matrices $3A, B-C$ and $A + 2B + 3C.$
 :icon:false
 Let 
 \begin{equation*} A = \begin{bmatrix} 1 & -1 & 2 & -2 \end{bmatrix}, \quad B = \begin{bmatrix} 0 \\ 8 \\ 0 \\ -4 \end{bmatrix}, \quad C = \begin{bmatrix} 5 \\ -5 \\ 5 \\ -5 \end{bmatrix}. \end{equation*}
-Find the scalar products $AB$ and $AC.$
+Find the scalar products $AB$ and $BC.$
 :::
 
 ### Matrix multiplication
