@@ -55,8 +55,8 @@ At university, things are a little bit different: you can pass the course via th
 Midterms are smaller exams that you will be able to take once we cover each of the four main parts of the course. That means that each midterm will be covering only a part of the material of the entire course and therefore midterms are a great way to pass the course in smaller chunks.
 
 In order to take a Midterm, you need to:
-- have passed all of the previous Midterms (which means getting at least 40% of the total number of points on a Midterm),
-- have solved all of the homeworks posted on [Merlin](https://moodle.srce.hr/) prior to the midterm.
+- have passed all of the previous Midterms (which means getting at least 40% of the total number of points),
+- have solved all of the homework posted on [Merlin](https://moodle.srce.hr/) prior to the midterm.
 
 In order to pass the course via the Midterms, there are certain requirements that need to be met:
 - you need to pass all **four** Midterms that will be held throughout the semester,
