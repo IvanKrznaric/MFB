@@ -26,11 +26,12 @@ We can use this approach to define "divison" of matrices. If we would like to di
 :label:inverz
 Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **<span style = "color:green"> the inverse </span>** of the matrix $A$ if 
 \begin{equation*} A \cdot X = X \cdot A = I .\end{equation*}
-In that case, we say that the matrix $A$ is **<span style = "color:green"> invertible </span>** or **<span style = "color:green"> regular </span>**. The inverse $X$ of the matrix $A$ is denoted by $A^{-1}.$
+In that case, we say that the matrix $A$ is **<span style = "color:green"> invertible</span>** or **<span style = "color:green"> regular </span>**.
 :::
 
 :::{note}
-Of course, the inverse of the matrix $A$ is denoted by $A^{-1}$ for the same reason why the reciprocal value of the number $7$ is denoted by $7^{-1}.$
+- if a matrix $A$ has an inverse, then such an inverse is unique. Hence, we can denote the inverse of the matrix $A$ by $A^{-1}$.
+- of course, the inverse of the matrix $A$ is denoted by $A^{-1}$ for the same reason why the reciprocal value of the number $7$ is denoted by $7^{-1}.$
 :::
 
 So, if we would like to divide the matrix $A$ by the matrix $B$, we would need to find the inverse $B^{-1}$ of the matrix $B$ and then compute $A \cdot B^{-1}.$ However, here we stumble upon a problem - not all matrices are invertible.
@@ -41,11 +42,17 @@ Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't inv
 :::
 
 ## <span class = "h2-num">2.2 </span><span class = "h2-text"> Determinant of a matrix </span>
-Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*. **<span style = "color:green"> The determinant </span>** is a number that is associated to every square matrix. The determinant of a matrix $A$ is denoted by $\lvert A \rvert$ or by $\text{det}(A).$ The determinant of a $2 \times 2$ matrix is given by a simple formula 
+Because not every matrix is invertible, we need a criterion that will allow us to check whether or not a given matrix has an inverse. For that, we will be using *the determinant*, which is just going to be a number associated to each square matrix.
+
+First, we define the determinant for a $2 \times 2$ matrix.
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon:false
+**<span style = "color: green">The determinant</span>** of a $2 \times 2$ matrix is given by the formula 
 :::{math}
 :numbered:false
 \begin{vmatrix} a & b \\ c & d \end{vmatrix} = ad - bc.
 :::
+
 
 :::{note} Problem 2.2
 :icon:false
@@ -61,6 +68,50 @@ Although you can use each method separately, in most of the problems it will be 
 :::
 
 ### Laplace expansion
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon:false
+Let $A$ be a $n \times n$ matrix. **<span style = "color: green">The minor</span>** of an element $a_{ij}$ is equal to the determinant of the matrix $A_{ij}$ obtained by deleting the $i$-th row and the $j$-th column from the matrix $A$. That minor is denoted by $|A_{ij}|$.
+
+**<span style = "color:green">The cofactor</span>** of an element $a_{ij}$ is given by $$C_{ij} = (-1)^{i+j}|A_{ij}|.$$
+:::
+
+:::{note} Problem 2.3
+:icon: false
+Let
+\begin{equation*}
+A = \begin{bmatrix} -3 & 2 & 1 \\ -4 & -2 & -2 \\ 2 & 7 & -5 \end{bmatrix}.
+\end{equation*}
+Find the minor and the corresponding cofactor of the element
+- in position $(1,1)$
+- in position $(2,3)$
+:::
+
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon:false
+Let $A$ be a $n \times n$ matrix and let $C_{ij}$ be the cofactor of the element $a_{ij}$. <br>
+**<span style = "color:green">Laplace expansion in terms of the i-th row</span>** is the number given by
+\begin{equation*}
+a_{i1}C_{i1} + a_{i2}C_{i2} + \dots + a_{in}C_{in}.
+\end{equation*}
+**<span style = "color:green">Laplace expansion in terms of the j-th column</span>** is the number given by
+\begin{equation*}
+a_{1j}C_{1j} + a_{2j}C_{2j} + \dots + a_{nj}C_{nj}.
+\end{equation*}
+Finally, **<span style = "color:green">the determiant</span>** of the matrix $A$ is a number equal to the value of the Laplace expansion in terms of any row or column of the matrix $A$.
+:::
+
+:::{note} Problem 2.4
+:icon: false
+Compute the determinant of the matrix
+\begin{equation*}
+A = \begin{bmatrix} 3 & 4 & 1 \\ 0 & 1 & 0 \\ 1 & 2 & 3 \end{bmatrix}.
+\end{equation*}
+by finding the Laplace expansion
+- in terms of the first column,
+- in terms of the second row.
+:::
+
+In the problems that follow, the way in which we are going to calculate the Laplace expansion of the matrix $A$ can be represented by the following algorithm.
 
 :::{note} ⚙️ Laplace expansion
 :icon:false
@@ -69,9 +120,9 @@ Although you can use each method separately, in most of the problems it will be 
 3. Run through the chosen row/column and expand
 :::
 
-:::{note} Problem 2.3
+:::{note} Problem 2.5
 :icon:false
-Find the determinant of the matrix $A = \begin{bmatrix} 1 & 0 & 0 & 4 \\ 2 & 3 & 4 & 1 \\ 3 & 0 & 1 & 0 \\ 4 & 1 & 2 & 3 \end{bmatrix}.$
+Find the determinant of the matrix $A = \begin{bmatrix} 1 & 0 & 0 & 4 \\ 2 & 3 & 4 & 1 \\ 0 & 0 & 1 & 0 \\ 4 & 0 & 2 & 3 \end{bmatrix}.$
 :::
 
 :::{caution} 💡 
@@ -79,43 +130,32 @@ Find the determinant of the matrix $A = \begin{bmatrix} 1 & 0 & 0 & 4 \\ 2 & 3 &
 Notice the main point about Laplace expansion: with each application of a Laplace expansion, we are reducing the order of the matrix whose determinant we need to calculate and hence we are reducing the complexity of our calculations.
 :::
 
-:::{note} Problem 2.4
-:icon:false
-Find the determinant of the following matrices:
-\begin{equation*} A = \begin{bmatrix} 1 & 2 & 3 \\ 0 & 3 & 1 \\ 0 & 0 & 2 \end{bmatrix}, \quad B = \begin{bmatrix} 2 & 0 & 0 \\ 3 & 3 & 0 \\ 2 & 2 & 2 \end{bmatrix}.\end{equation*}
-:::
-
-:::{note} Problem 2.5
-:icon:false
-Find the determinant of the matrix $A = \begin{bmatrix} 2 & -4 & 8 & 11 \\ -5 & 7 & -3 & 0 \\ 0 & 0 & 0 & 0 \\ 1 & 27 & -33 & 4 \end{bmatrix}.$
+:::{note}
+Using the Laplace expansion, the following two properties hold:
+1. if a matrix $A$ has a row or a column whose all elements are equal to $0$, then the determinant of the matrix $A$ is equal to 0,
+2. the determinant of an upper/lower triangular matrix is equal to the product of its elements on the main diagonal.
 :::
 
 
+### Calculating determinant using row operations
+As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our matrix doesn't have any zeros? In that case, we will the following property of the determinant:
 
+:::{danger} 📌 **<span style = "color:red"> Row operations </span>**
+:icon: false
+Let $A$ be a $n \times n$ matrix. If a scalar multiple of one row is added to another row, then the value of the determinant $\text{det}(A)$ does not change.
+:::
+In other words, to any row of our matrix we can add another row multiplied by some number and the determinant will stay the same. 
 
-### Elementary transformations
-As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our has matrix doesn't have any zeros? In that case, we will use **<span style = "color:blue"> elementary transformations </span>** to get the zeros in our matrix so that we can use the Laplace expansion to find the determinant. To use an elementary transformation simply means to multiply a row of a matrix by some number and adding it to some other row. Obviously, the end-goal of performing elementary transformations is to get zeros along some column of the given matrix so that we can use Laplace expansion to calculate the determinant. 
+The way in which we are going to use this property is the following: we are going to try to get as many zeros along a certain column as possible so that we can use the Laplace expansion in terms of that column.
 
 :::{note} Problem 2.6
 :icon:false
-Find the determinant of the matrix $A = \begin{bmatrix} 2 & 1 & 4 \\ 4 & 2 & 9 \\ 8 & 4 & 17 \end{bmatrix}.$
+Find the determinant of the matrix $A = \begin{bmatrix} 3 & 0 & 1 & 1 \\ 1 & 3 & -2 & 0 \\ 0 & -3 & -2 & -2 \\ -2 & -4 & 3 & 0\end{bmatrix}$.
 :::
 
-:::{note} Problem 2.7
+:::{caution} 💡 
 :icon:false
-:label: transponiranje
-Let $A = \begin{bmatrix} 1 & -6 & -1 \\ -2 & 1 & 2 \\ 3 & 0 & 1 \end{bmatrix}.$
-- find the determinant of the matrix $A$
-- find the determinant of the transpose $A^T$ of the matrix $A$
-:::
-
-:::{note}
-Notice that in the [](#transponiranje) we got that $\text{det}(A^T) = \text{det}(A).$ That formula holds for all square matrices so once we find $\text{det}(A)$ we immediately know what is $\text{det}(A^T)$ equal to.
-:::
-
-:::{caution} 💡
-:icon:false
-Notice the main point of elementary transformations: when a matrix has a lot of zeros, finding the determinant is easy because we can use the Laplace expansion. If the matrix doesn't have a lot of zeros, we are using elementary transformations to reduce the complexity of the matrix and to obtain something very simple that we know how to work with.
+Notice the main point of row operations: when a matrix has a lot of zeros, finding the determinant is easy because we can use the Laplace expansion. If the matrix doesn't have a lot of zeros, we are using elementary transformations to reduce the complexity of the matrix and to obtain something very simple that we know how to work with.
 :::
 
 The most important theorem when talking about the determinant is the **Binet-Cauchy theorem**.
@@ -126,7 +166,7 @@ The most important theorem when talking about the determinant is the **Binet-Cau
 Let $A,B$ be two $n \times n$ matrices. Then $\text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).$
 :::
 
-:::{note} Problem 2.8
+:::{note} Problem 2.7
 :icon:false
 Let $A = \begin{bmatrix} 1 & 2 & 3 \\ 0 & 2 & 4 \\ 0 & 0 & 1 \end{bmatrix}$ and $B = \begin{bmatrix} 2 & 8 & 16 \\ 0 & 1 & 2 \\ 0 & 0 & 2 \end{bmatrix}.$ \
 If $X$ is a $3 \times 3$ matrix such that $XA = B,$ find the determinant of the matrix $X$.
@@ -144,7 +184,8 @@ In the second homework, you have a question that deals specifically with this co
 ## <span class = "h2-num">2.3 </span><span class = "h2-text"> Matrix inversion </span>
 As we have mentioned in the introduction, the main point of the determinant is to give us a criterion for checking whether or not a matrix has an inverse or not. That criterion is the following:
 
-:::{important}
+:::{danger} 📌 <span style = "color:red"> How to check if a matrix has an inverse or not?</span>
+:icon: false
 \begin{equation*} 
 \begin{split}
 \text{det}(A) \neq 0 &\implies A \text{ has an inverse} \\ 
@@ -153,23 +194,21 @@ As we have mentioned in the introduction, the main point of the determinant is t
 \end{equation*}
 :::
 
-Since we have just learned how to compute the determinant of a matrix, we know how to chekc whether or not a matrix has an inverse or not. Next thing we would like to know is how to explicitly compute the inverse of a matrix. 
+Since we have just learned how to compute the determinant of a matrix, we know how to check whether or not a matrix has an inverse or not. Next thing we would like to know is how to explicitly compute the inverse of a matrix. 
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
-Let $A = [a_{ij}] \in M_n$ be a square matrix. 
-- **<span style = "color:green"> The minor </span>** of an element $a_{ij}$ is the determinant of a matrix obtained by deleting the $i$-th row and the $j$-th column of the matrix $A$. That number is denoted by $M_{ij}$.
-- **<span style = "color:green"> The cofactor matrix </span>** is a $n \times n$ matrix $C = [c_{ij}],$ where 
-\begin{equation*} c_{ij} = (-1)^{i+j}M_{ij} \end{equation*} 
-- **<span style = "color:green"> The adjoint </span>** of the matrix $A$ is the matrix $A^{\ast} = C^T.$
+Let $A$ be a $n \times n$ matrix and let $C_{ij}$ be a cofactor of the element $a_{ij}$.
+- **<span style = "color:green">The cofactor matrix</span>** is the matrix $C = [C_{ij}]$,
+- **<span style = "color:green">The adjoint</span>** of the matrix $A$ is given by $A^\ast = C^T$.
 :::
-Finally, the inverse of the matrix $A$ is given by the formula 
+The inverse of the matrix $A$ is given by the formula 
 \begin{equation*} A^{-1} = \frac{1}{\text{det}(A)}A^\ast.\end{equation*}
 
-:::{note} Problem 2.9
+:::{note} Problem 2.8
 :icon:false
 Let $A = \begin{bmatrix} 2 & 4 & 1 \\ 4 & 3 & 7 \\ 2 & 1 & 3\end{bmatrix}.$
-- Show that the matrix $A$ is invertible;
+- Show that the matrix $A$ is invertible,
 - Using the adjoint, find the inverse $A^{-1}$ of the matrix $A$
 :::
 
@@ -209,7 +248,7 @@ Cramer's systems are particularly easy to solve because their solutions are give
 \begin{equation*} x_i = \frac{D_i}{D}, \quad i = 1, \dots, n\end{equation*}
 where $D = \text{det}(A)$ and $D_i$ is the determinant of the matrix obtained by replacing the $i$-th column of the matrix $A$ by the column-matrix $B$.
 
-:::{note} Problem 2.10
+:::{note} Problem 2.9
 :icon:false
 By using Cramer's rule, solve the following system of linear equations:
 \begin{equation*} \begin{cases} x_1 -6x_2 -x_3 = -6 \\ -2x_1 + x_2 +2x_3 = 1 \\ 3x_1 +x_3 = 4 \end{cases} \end{equation*}
