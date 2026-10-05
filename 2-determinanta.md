@@ -16,10 +16,10 @@ What is the connection between numbers $7$ and $\frac{1}{7}?$ Well, if we multip
 This also means that **the reciprocal value** or **the inverse** of the number $7$ is $\frac{1}{7}.$
 
 So, we can see that there are two parts that are crucial when dividing number $a$ by the number $b$:
-1. Find the inverse $\frac{1}{b}$ of the number $b$
-2. Multiply $a$ and $\frac{1}{b}$
+1. Find the inverse $\frac{1}{b}$ of the number $b$,
+2. Multiply $a$ and $\frac{1}{b}$.
 
-We can use this approach to define "divison" of matrices. If we would like to divide matrix $A$ by the matrix $B$, firstly we need to define what would be the *inverse* of the matrix $B$ and then we would simply need to multiply $A$ by that inverse.
+We can use this approach to define "divison" of matrices. If we would like to divide matrix $A$ by the matrix $B$, first we need to define what would be the *inverse* of the matrix $B$ and then we would simply need to multiply $A$ by that inverse.
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
@@ -29,7 +29,7 @@ Let $A$ be a $n \times n$ matrix. We say that a $n \times n$ matrix $X$ is **<sp
 In that case, we say that the matrix $A$ is **<span style = "color:green"> invertible</span>** or **<span style = "color:green"> regular </span>**.
 :::
 
-:::{note}
+:::{note} Remark
 - if a matrix $A$ has an inverse, then such an inverse is unique. Hence, we can denote the inverse of the matrix $A$ by $A^{-1}$.
 - of course, the inverse of the matrix $A$ is denoted by $A^{-1}$ for the same reason why the reciprocal value of the number $7$ is denoted by $7^{-1}.$
 :::
@@ -38,7 +38,7 @@ So, if we would like to divide the matrix $A$ by the matrix $B$, we would need t
 
 :::{note} Problem 2.1
 :icon:false
-Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't invertible, i.e. it does not have an inverse.
+Show that the matrix $A = \begin{bmatrix} 1 & 1 \\ 1 & 1\end{bmatrix}$ isn't invertible, i.e. that it does not have an inverse.
 :::
 
 ## <span class = "h2-num">2.2 </span><span class = "h2-text"> Determinant of a matrix </span>
@@ -59,13 +59,7 @@ First, we define the determinant for a $2 \times 2$ matrix.
 Find the determinant of the matrix $A = \begin{bmatrix} 1 & 2 \\ 3 & 4 \end{bmatrix}.$
 :::
 
-In order to find determinant of matrices of higher order, we will use two methods:
-- Laplace expansion
-- Elementary transformations
-
-:::{note}
-Although you can use each method separately, in most of the problems it will be best if you use both of them together to find the determinant.
-:::
+In what follows, we want to learn how to find determinants of matrices of higher order.
 
 ### Laplace expansion
 :::{tip} <span style = "color : #228B22"> Definition </span>
@@ -115,9 +109,9 @@ In the problems that follow, the way in which we are going to calculate the Lapl
 
 :::{note} ⚙️ Laplace expansion
 :icon:false
-1. Choose a row or a column (preferably one with the most zeros)
-2. Determine the signs of its elements
-3. Run through the chosen row/column and expand
+1. Choose a row or a column (preferably one with the most zeros),
+2. Determine the signs of its elements,
+3. Run through the chosen row/column and expand.
 :::
 
 :::{note} Problem 2.5
@@ -130,7 +124,7 @@ Find the determinant of the matrix $A = \begin{bmatrix} 1 & 0 & 0 & 4 \\ 2 & 3 &
 Notice the main point about Laplace expansion: with each application of a Laplace expansion, we are reducing the order of the matrix whose determinant we need to calculate and hence we are reducing the complexity of our calculations.
 :::
 
-:::{note}
+:::{note} Remark
 Using the Laplace expansion, the following two properties hold:
 1. if a matrix $A$ has a row or a column whose all elements are equal to $0$, then the determinant of the matrix $A$ is equal to 0,
 2. the determinant of an upper/lower triangular matrix is equal to the product of its elements on the main diagonal.
@@ -138,7 +132,7 @@ Using the Laplace expansion, the following two properties hold:
 
 
 ### Calculating determinant using row operations
-As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our matrix doesn't have any zeros? In that case, we will the following property of the determinant:
+As we have seen, Laplace expansion is a very useful method of finding the determinant of a matrix that has a lot of zeros along some row or a column, however what if our matrix doesn't have any zeros? In that case, we will use the following property of the determinant.
 
 :::{danger} 📌 **<span style = "color:red"> Row operations </span>**
 :icon: false
@@ -178,7 +172,9 @@ A common mistake that students make when they are asked to state the [Binet-Cauc
 \begin{equation*}
 \text{det}(A \cdot B) = \text{det}(A) \cdot \text{det}(B).
 \end{equation*}
-That equation, without any additional assumptions is **<span style = "color:red"> false </span>**. What are $A,B?$ If they are matrices, what kind of matrices? If they are square matrices, can they be any square matrices or...? \
+That equation, without any additional assumptions, **<span style = "color:red">does not hold</span>**.
+
+What are $A,B?$ If they are matrices, what kind of matrices? If they are square matrices, can they be any square matrices or...? \
 In the second homework, you have a question that deals specifically with this common mistake and shows you what the correct answer should be.
 :::
 ## <span class = "h2-num">2.3 </span><span class = "h2-text"> Matrix inversion </span>
@@ -199,7 +195,7 @@ Since we have just learned how to compute the determinant of a matrix, we know h
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
 Let $A$ be a $n \times n$ matrix and let $C_{ij}$ be a cofactor of the element $a_{ij}$.
-- **<span style = "color:green">The cofactor matrix</span>** is the matrix $C = [C_{ij}]$,
+- **<span style = "color:green">The cofactor matrix</span>** is the matrix $C = [C_{ij}]$ whose elements are the corresponding cofactors,
 - **<span style = "color:green">The adjoint</span>** of the matrix $A$ is given by $A^\ast = C^T$.
 :::
 The inverse of the matrix $A$ is given by the formula 
@@ -207,18 +203,18 @@ The inverse of the matrix $A$ is given by the formula
 
 :::{note} Problem 2.8
 :icon:false
-Let $A = \begin{bmatrix} 2 & 4 & 1 \\ 4 & 3 & 7 \\ 2 & 1 & 3\end{bmatrix}.$
+Let $A = \begin{bmatrix} 7 & 1 & 2\\ 1 & 6 & -2 \\ -4 & -1 & -1 \end{bmatrix}.$
 - Show that the matrix $A$ is invertible,
 - Using the adjoint, find the inverse $A^{-1}$ of the matrix $A$
 :::
 
 :::{error} Common mistake on the Midterm/Exam
 :class:dropdown
-Another common mistake that students make on the Midterm/Exam is when they are asked to define an inverse of a regular matrix $X$. A lot of students simply write 
+Another common mistake that students make on the Midterm/Exam is when they are asked to define an inverse of a regular matrix $A$. A lot of students simply write 
 \begin{equation*}
 A^{-1} = \frac{1}{\text{det}(A)}A^\ast.
 \end{equation*}
-and move on. Of course, this answer is **<span style = "color:red"> wrong </span>**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
+and move on. This answer is **<span style = "color:red">incorrect</span>**. The formula stated above is the consequence of the definition, while the [definition of the inverse](#inverz) is that it's a matrix $X$ such that 
 \begin{equation*}
 A \cdot X = X \cdot A = I.
 \end{equation*}
