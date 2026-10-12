@@ -16,13 +16,17 @@ Notice that a vector is determined by the number of its elements. For example, t
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
 Let $a_1, \dots, a_k \in \R^n$ be vectors with $n$ components and let $c_1, \dots, c_k \in \R$ be real numbers. The vector
-\begin{equation*} c_1a_1 + \dots + c_k a_k\end{equation*}
+\begin{equation*} v = c_1a_1 + \dots + c_k a_k\end{equation*}
 is called **<span style = "color:green"> a linear combination </span>** of vectors $a_1, \dots, a_k.$
 :::
 
 :::{note} Problem 3.1
 :icon:false
-Let $a_1 = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}, a_2 = \begin{bmatrix} 5 & -2 & 3 \end{bmatrix}, a_3 = \begin{bmatrix} -1 & 0 & 0 \end{bmatrix}.$ Find the linear combination of these vectors given by $v = -3a_1+2a_2-a_3.$
+Let
+\begin{equation*}
+a_1 = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}, \quad a_2 = \begin{bmatrix} 5 & -2 & 3 \end{bmatrix}, \quad a_3 = \begin{bmatrix} -1 & 0 & 0 \end{bmatrix}.
+\end{equation*}
+Find the linear combination of these vectors given by $v = -3a_1+2a_2-a_3.$
 :::
 
 
@@ -33,7 +37,7 @@ The vectors $a_1, \dots, a_k$ are said to be **<span style = "color:green"> line
 \begin{equation*}c_1a_1 + c_2a_2 + \dots + c_k a_k = 0 \implies c_1 = c_2 = \dots = c_k = 0 \end{equation*}
 Otherwise, we say that these vectors are **<span style = "color:green"> linearly dependent </span>**.
 :::
-On the lectures, you have learnt that that if the vectors $a_1, \dots, a_k$ are linearly dependent, then one of those vectors can be represented as a linear combination of the others.
+During the lectures, you've learned that that if the vectors $a_1, \dots, a_k$ are linearly dependent, then one of those vectors can be represented as a linear combination of the others.
 
 :::{error} Common mistake on the Midterm/Exam
 :class:dropdown
@@ -57,40 +61,28 @@ As we have seen, checking whether or not the given vectors are linearly dependen
 
 :::{note} Problem 3.3
 :icon:false
-Find the rank of the matrix $A = \begin{bmatrix} 1 & 5 \\ 0 & 1 \end{bmatrix}.$
+Find the rank of the matrix $A = \begin{bmatrix} 1 & 2 & 3 & 6 & 0 \\ 0 & 5 & 6 & 11 & 0 \\ 0 & 0 & 8 & 8 & 0 \\ 0 & 0 & 0 & 0 & 0\end{bmatrix}.$
 :::
 
-:::{note} Problem 3.4
-:icon: false
-Find the rank of the matrix $A = \begin{bmatrix} 1 & 1 & -2 \\ 0 & 1 & -2 \\ 0 & 0 & 4\end{bmatrix}.$
-:::
+In order to calculate the rank of an arbitrary matrix $A$, we are going to be using **<span style = "color:green"> elementary transformations</span>** which consist of the following operations:
+1. Interchanging any two rows (columns) of the matrix $A$,
+2. multiplying each row (column) of the matrix $A$ by and scalar different from $0$,
+3. adding some row (column) of the matrix $A$ to another row (column) of the matrix $A$.
 
-:::{note} Problem 3.5
-:icon:false
-Find the rank of the matrix $A = \begin{bmatrix} 1 & 1 & -2 \\ 0 & 1 & -2 \\ 0 & 0 & 0\end{bmatrix}.$
-:::
-
-:::{note} Problem 3.6
-:icon:false
-Find the rank of the matrix $A = \begin{bmatrix} 1 & 2 & 3 & 6 \\ 0 & 5 & 6 & 11 \\ 0 & 0 & 8 & 8 \\ 0 & 0 & 0 & 0\end{bmatrix}.$
-:::
-
-:::{note} Problem 3.7
-:icon:false
-Find the rank of the matrix $A = \begin{bmatrix}1 & 0 & 2 & 1 \\ 0 & 1 & -3 & 1 \\ 0 & 0 & 1 & 0 \end{bmatrix}.$
-:::
+The way in which we are going to be using elementary transformations to compute the rank of a matrix can be summarized by the following algorithm:
 
 :::{note} ⚙️ Gauss-Jordan algorithm
 :icon:false
 :label:GJALGO
-1. Choose an element in the first column that you can use to cancel out all other elements in the first column
-2. Interchange the corresponding rows so that the chosen element is in the position $(1,1)$
-3. Cancel out the elements underneath the chosen element
-4. Forget about the first row and first column
-5. Repeat
+1. Choose an element in the first column that you can use to cancel out all other elements in the first column,
+2. Interchange the corresponding rows so that the chosen element is in the position $(1,1)$,
+3. Cancel out the elements underneath the chosen element,
+4. Forget about the first row and first column,
+5. Repeat.
 :::
+Once we are done with the Gauss-Jordan algorithm, you can simply read-off the rank from the resulting matrix by counting the number of its non-zero rows, i.e. the rows in which not all elements have the value equal to $0$.
 
-:::{note} Problem 3.8
+:::{note} Problem 3.4
 :icon:false
 Find the rank of the matrix $A = \begin{bmatrix} 2 & 1 & 1 & 0 \\ 1 & 2 & -1 & -3 \\ 0 & 1 & -1 & -3 \\ 1 & 3 & -2 & -5 \end{bmatrix}.$
 :::
@@ -100,38 +92,51 @@ Find the rank of the matrix $A = \begin{bmatrix} 2 & 1 & 1 & 0 \\ 1 & 2 & -1 & -
 The main idea behind the Gauss-Jordan algorithm is to reduce the original matrix to a matrix whose rank we can determine just by looking at it and counting non-zero rows.
 :::
 
-One of the reasons we introduced the notion of a rank of a matrix is to check linear (in)dependence of vectors. Here's how we do it:
-1. Given the vectors, we make a matrix whose rows are equal to the entries of the given vectors
-2. If the rank of that matrix is equal to the number of vectors we started with, the vectors are independent
-3. Otherwise, they are dependent
+:::{note} Problem 3.5
+:icon: false
+Let
+\begin{equation*}
+A = \begin{bmatrix} 1 & -2 & 3 \\ -2 & 1 & -1 \\ t & t & 2 \end{bmatrix}.
+\end{equation*}
+Based on the value of the real paramter $t \in \mathbb{R}$, compute the rank of the matrix $A$.
+:::
 
-:::{note} Problem 3.9
+One of the reasons we introduced the notion of a rank of a matrix is to check linear (in)dependence of vectors. Here's how we do it:
+1. Given the vectors, we make a matrix whose rows are equal to the entries of the given vectors,
+2. If the rank of that matrix is equal to the number of vectors we started with, the vectors are independent,
+3. Otherwise, they are dependent.
+
+:::{note} Problem 3.6
 :icon:false
 Determine whether or not the following vectors are linearly dependent or independent:
 \begin{equation*} \begin{bmatrix} 2 & 1 & 1 \end{bmatrix}, \quad \begin{bmatrix} 1 & 3 & 2 \end{bmatrix}, \quad \begin{bmatrix}1 & 0 & 1 \end{bmatrix}. \end{equation*}
 :::
 
+In case we are working with a square matrix, then there is a connection between the determinant and rank of a matrix given by the following result.
 :::{danger} <span style = "color:red"> Theorem </span>
 :icon:false
-Let $A$ be a square matrix. Then
+Let $A$ be a square matrix of order $n \times n$. Then
 \begin{equation*}
 \begin{split}
-A \text{ is regular } &\iff \text{det}(A) \neq 0 \iff A \text{ has full rank} \\
-A \text{ is singular} &\iff \text{det}(A) = 0 \iff A \text{ doesn't have full rank}
+A \text{ is regular } &\iff \text{det}(A) \neq 0 \iff r(A) = n,\\
+A \text{ is singular} &\iff \text{det}(A) = 0 \iff r(A) < n.
 \end{split}
 \end{equation*}
 :::
 
-:::{note} Problem 3.10
+:::{note} Problem 3.7
 :icon:false
 Let $A = \begin{bmatrix} 1 & 0 & 0 & 3 \\ 0 & 1 & -2 & 0 \\ -2 & 3 & -2 & 3 \\ 0 & -3 & 3 & 3 \end{bmatrix}.$ Is the matrix $A$ regular or singular?
 :::
 
-## <span class = "h2-num">3.4 </span><span class = "h2-text"> Inverse of a matrix (remastered) </span>
+## <span class = "h2-num">3.4 </span><span class = "h2-text"> Inverse of a matrix (remaster) </span>
 As we have seen in the previous chapter, we can use the determinant to calculate the inverse of a regular matrix:
-\begin{equation*} M_{ij} \rightarrow C \rightarrow A^\ast \rightarrow A^{-1} \end{equation*}
+\begin{equation*}
+M_{ij} \rightarrow C \rightarrow A^\ast \rightarrow A^{-1}.
+\end{equation*}
+
 We will now learn how to use the [Gauss-Jordan algorithm](#GJALGO) to find the inverse of a regular matrix in a much easier way.
-:::{note} Problem 3.11 
+:::{note} Problem 3.8
 :icon:false
-Using the Gauss-Jordan algorithm, find the inverse of the matrix $A = \begin{bmatrix} 1 & 1 & 1 \\ 1 & 1 & 0 \\ 1 & 0 & 0 \end{bmatrix}.$
+Using the Gauss-Jordan algorithm, find the inverse of the matrix $A = \begin{bmatrix} 1 & 2 & 1 \\ 1 & 1 & 0 \\ 2 & 0 & -1 \end{bmatrix}.$
 :::
