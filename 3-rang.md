@@ -29,6 +29,14 @@ a_1 = \begin{bmatrix} 1 & 1 & 0\end{bmatrix}, \quad a_2 = \begin{bmatrix} 5 & -2
 Find the linear combination of these vectors given by $v = -3a_1+2a_2-a_3.$
 :::
 
+:::{note} Problem 3.2
+:icon: false
+Write the vector $\displaystyle \begin{bmatrix} 4 & -11 \end{bmatrix}$ as a linear combination of vectors
+\begin{equation*}
+    a_1 = \begin{bmatrix} 2 & -1 \end{bmatrix}, \quad a_2 = \begin{bmatrix} 1 & 4 \end{bmatrix}.
+\end{equation*}
+:::
+
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
@@ -45,7 +53,7 @@ In the sentence above, notice what is the defining property of linear dependence
 A lot of students confuse these two notions when they are questioned on it on the Midterms or the Exam, so keep in mind what is the definition and what is the consequence of the definition.
 :::
 
-:::{note} Problem 3.2
+:::{note} Problem 3.3
 :icon:false
 Check if the following vectors are linearly dependent or independent:
 \begin{equation*} a_1 = \begin{bmatrix}  1 & 1 & 0 \end{bmatrix}, \quad a_2 = \begin{bmatrix} 1 & 2 & 0 \end{bmatrix}, \quad a_3 = \begin{bmatrix} 2 & 0 & 1 \end{bmatrix}. \end{equation*}
@@ -56,10 +64,10 @@ As we have seen, checking whether or not the given vectors are linearly dependen
 
 :::{tip} <span style = "color : #228B22"> Definition </span>
 :icon:false
-**<span style = "color:green"> The rank </span>** of the matrix $A$ is the maximum number of its linearly independent columns. That number is denoted by $r(A).$
+**<span style = "color:green"> The rank </span>** of the matrix $A$ is the maximum number of its linearly independent columns (rows). That number is denoted by $r(A).$
 :::
 
-:::{note} Problem 3.3
+:::{note} Problem 3.4
 :icon:false
 Find the rank of the matrix $A = \begin{bmatrix} 1 & 2 & 3 & 6 & 0 \\ 0 & 5 & 6 & 11 & 0 \\ 0 & 0 & 8 & 8 & 0 \\ 0 & 0 & 0 & 0 & 0\end{bmatrix}.$
 :::
@@ -77,14 +85,13 @@ The way in which we are going to be using elementary transformations to compute 
 1. Choose an element in the first column that you can use to cancel out all other elements in the first column,
 2. Interchange the corresponding rows so that the chosen element is in the position $(1,1)$,
 3. Cancel out the elements underneath the chosen element,
-4. Forget about the first row and first column,
-5. Repeat.
+4. Forget about the first row and first column, and repeat.
 :::
 Once we are done with the Gauss-Jordan algorithm, you can simply read-off the rank from the resulting matrix by counting the number of its non-zero rows, i.e. the rows in which not all elements have the value equal to $0$.
 
-:::{note} Problem 3.4
+:::{note} Problem 3.5
 :icon:false
-Find the rank of the matrix $A = \begin{bmatrix} 2 & 1 & 1 & 0 \\ 1 & 2 & -1 & -3 \\ 0 & 1 & -1 & -3 \\ 1 & 3 & -2 & -5 \end{bmatrix}.$
+Find the rank of the matrix $A = \begin{bmatrix} 2 & 1 & 1 & 0 \\ 1 & 2 & -1 & -3 \\ 0 & 1 & -1 & -2 \\ 1 & 3 & -2 & -5 \end{bmatrix}.$
 :::
 
 :::{caution} 💡 
@@ -92,7 +99,7 @@ Find the rank of the matrix $A = \begin{bmatrix} 2 & 1 & 1 & 0 \\ 1 & 2 & -1 & -
 The main idea behind the Gauss-Jordan algorithm is to reduce the original matrix to a matrix whose rank we can determine just by looking at it and counting non-zero rows.
 :::
 
-:::{note} Problem 3.5
+:::{note} Problem 3.6
 :icon: false
 Let
 \begin{equation*}
@@ -106,10 +113,10 @@ One of the reasons we introduced the notion of a rank of a matrix is to check li
 2. If the rank of that matrix is equal to the number of vectors we started with, the vectors are independent,
 3. Otherwise, they are dependent.
 
-:::{note} Problem 3.6
+:::{note} Problem 3.7
 :icon:false
 Determine whether or not the following vectors are linearly dependent or independent:
-\begin{equation*} \begin{bmatrix} 2 & 1 & 1 \end{bmatrix}, \quad \begin{bmatrix} 1 & 3 & 2 \end{bmatrix}, \quad \begin{bmatrix}1 & 0 & 1 \end{bmatrix}. \end{equation*}
+\begin{equation*} \begin{bmatrix} 2 & 0 & 1 \end{bmatrix}, \quad \begin{bmatrix} 1 & 3 & 2 \end{bmatrix}, \quad \begin{bmatrix}1 & 0 & 1 \end{bmatrix}. \end{equation*}
 :::
 
 In case we are working with a square matrix, then there is a connection between the determinant and rank of a matrix given by the following result.
@@ -124,9 +131,15 @@ A \text{ is singular} &\iff \text{det}(A) = 0 \iff r(A) < n.
 \end{equation*}
 :::
 
-:::{note} Problem 3.7
+:::{note} Problem 3.8
 :icon:false
-Let $A = \begin{bmatrix} 1 & 0 & 0 & 3 \\ 0 & 1 & -2 & 0 \\ -2 & 3 & -2 & 3 \\ 0 & -3 & 3 & 3 \end{bmatrix}.$ Is the matrix $A$ regular or singular?
+Let
+\begin{equation*}
+    A = \begin{bmatrix} 1 & 2 & -2 & -2 \\ -2 & -6 & 5 & 6 \\ -1 & -2 & 4 & 0 \\ 0 & 2 & 3 & -6 \end{bmatrix}.
+\end{equation*}
+- Compute the rank of the matrix $A$,
+- Compute the determinant of the matrix $A$,
+- Is the matrix $A$ regular or singular?
 :::
 
 ## <span class = "h2-num">3.4 </span><span class = "h2-text"> Inverse of a matrix (remaster) </span>
@@ -136,7 +149,7 @@ M_{ij} \rightarrow C \rightarrow A^\ast \rightarrow A^{-1}.
 \end{equation*}
 
 We will now learn how to use the [Gauss-Jordan algorithm](#GJALGO) to find the inverse of a regular matrix in a much easier way.
-:::{note} Problem 3.8
+:::{note} Problem 3.9
 :icon:false
 Using the Gauss-Jordan algorithm, find the inverse of the matrix $A = \begin{bmatrix} 1 & 2 & 1 \\ 1 & 1 & 0 \\ 2 & 0 & -1 \end{bmatrix}.$
 :::
