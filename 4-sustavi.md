@@ -16,7 +16,7 @@ Therefore, we need to answer to questions:
 - When does a given system of linear equations have a solution?
 - If the given system has a solution, how do we compute it?
 
-## <span class = "h2-num">4.2 </span><span class = "h2-text"> Kronecker-Capelli theorem </span>
+## <span class = "h2-num">4.2 </span><span class = "h2-text"> Systems of linear equations </span>
 The following theorem gives us a way of checking if the given system of linear equations does have or does not have a solution.
 
 :::{danger} <span style = "color: red"> Theorem (Kronecker - Capelli) </span>
@@ -36,21 +36,9 @@ x+2y+z = 4 \\ 2x+y+2z = 5 \\ 3x+2y+3z = 12
 \end{cases}
 \end{equation*}
 :::
-
-:::{note} Problem 4.2
-:icon:false
-Check whether or not the following system of linear equations has a solution:
-\begin{equation*}
-\begin{cases}
-x+2y+3z = 1 \\ -x+3y-21z = 2 \\ 3x+7y+3z = 3
-\end{cases}
-\end{equation*}
-:::
-
-## <span class = "h2-num">4.3 </span><span class = "h2-text"> Gauss-Jordan method </span>
 Now that we know how to check whether or not a given system of linear equations has a solution, we want to know how to explicity compute the solutions (if they exist).
 
-:::{note} Problem 4.3
+:::{note} Problem 4.2
 :icon:false
 Using the Gauss-Jordan algorithm, solve the system
 \begin{equation*}
@@ -62,42 +50,37 @@ x+2z = 1 \\
 \end{equation*}
 :::
 
+:::{note} Problem 4.3
+:icon:false
+Using Gauss-Jordan algorithm, solve the following systems:
+- \begin{equation*} \begin{cases} x+y-z = 0 \\ 2x-y+z = 0 \end{cases} \end{equation*}
+- \begin{equation*} \begin{cases} x+y-z+w = 0 \\ 2x-y+z-w = 0 \end{cases} \end{equation*}
+:::
+
 :::{note} Problem 4.4
 :icon:false
 Using Gauss-Jordan algorithm, solve the system
 \begin{equation*}
 \begin{cases}
-x+3y = 2 \\
-2x+3y+3z = 7 \\
-2x+z = 6 \\
-3x+9y+3z = 12
+2x -y + 2z = 6 \\
+-x +y + z = 0 \\
+-x -3z = -6 \\
+4x -2y +4z = 12
 \end{cases}
 \end{equation*}
 :::
 
-:::{note} Problem 4.5
-:icon:false
-Using Gauss-Jordan algorithm, solve the following systems: \
-a)
-\begin{equation*} 
-\begin{cases}
-x+y-z = 0 \\ 2x-y+z = 0
-\end{cases}
-\end{equation*}
-b) 
-\begin{equation*}
-\begin{cases}
-x+y-z+w = 0 \\ 2x-y+z-w = 0
-\end{cases}
-\end{equation*}
-:::
+
 The following diagram tells us the whole story about the number of solutions of a given system of linear equations.
 :::{figure} ./slike/sustavi.jpg
 Number of solutions of a system is completely determined by the rank.
 :::
 
-## <span class = "h2-num">4.4 </span><span class = "h2-text"> Input-output model </span>
-In this section we are going to use all of the things we learned about matrices and systems of linear equations to study one important economic model called **<span style = "color:green"> the input-output model </span>**. We are going to use it to model a scenario in which we have different sectors of an economy that interact with each other, meaning that every sector consumes outputs of other sectors in order to produce its output. Alongside every sector consuming a part of outputs of all other sectors, each sector has its own demand which is just the amount of output of that sector that is not being used for further production, but rather for export.
+## <span class = "h2-num">4.3 </span><span class = "h2-text"> Input-output analysis </span>
+In this section we are going to use all of the things we learned about matrices and systems of linear equations to study one important economic model called **<span style = "color:green"> the input-output model </span>**. 
+
+That models describes a scenario in which an economy is comprised of $n$ sectors that are interrelated with one another. The way in which those sectors are connected is the following: each of those sectors produces one type of output,  and the inputs of each sector needed for its production process are outputs of all the sectors in the economy. Also, each sector sets aside a part of its output for consumption. That is the part that is not being used in further production and is called the **<span style = "color:green"> final demand</span>** of that sector. Part of the output of a sector that is being used as input for production of output of other sectors is called **<span style = "color:green"> intermediate output</span>**.
+
 
 The assumptions of the input-output model are:
 - if the inputs into some sector increase $p$ times, then the output of that sector increases $p$ times as well
@@ -115,18 +98,17 @@ Throughout this section, we will be using the following notation:
 - **<span style = "color:green"> matrix of technical coefficients </span>** $\dots A = [a_{ij}]$
 - **<span style = "color:green"> technology matrix </span>** $\dots T = I - A$
 
-We are also going to be using the following formulas of the input-output model:
+We are also going to be using the following formulas for the input-output model:
+
 :::{danger} Basic formulas for the input-output model
-\begin{equation*}
-\begin{split}
-Q_{ij} &= a_{ij}Q_j, \quad \quad Q_i = Q_{i1} + \dots + Q_{in} + q_i \\
-&\hspace{0.2 cm} \\
-TQ &= q, \quad \quad T \cdot Q^{\text{new}} = q^{\text{new}}
-\end{split}
-\end{equation*}
+:label: io-formulas
+- $\displaystyle a_{ij} = \frac{Q_{ij}}{Q_j}$,
+- $\displaystyle Q_i = Q_{i1} + \dots + Q_{in} + q_i$,
+- $\displaystyle TQ = q$,
+- $\displaystyle T \cdot Q^{\text{new}} = q^{\text{new}}$.
 :::
 
-In order to completely describe the dependencies between the sectors, one needs to calculate all the total outputs $Q_i,$ all the intermediate outputs $Q_{ij}$ and all the final demands $q_i.$ Those values are usually represented using the input-output table:
+In order to completely describe the dependencies between the sectors, one needs to calculate all the total outputs $Q_i,$ all the intermediate outputs $Q_{ij}$ and all the final demands $q_i.$ Those values are usually represented using the **<span style = "color:green"> input-output table</span>**.
 
 \begin{equation*}
 \begin{array}{c | c | c}
@@ -138,8 +120,8 @@ Q_n & Q_{n1} \quad \dots \quad Q_{nn} & q_n
 \end{array}
 \end{equation*}
 
-:::{note} Problem 4.6
-:label: P46
+:::{note} Problem 4.5
+:label: P45
 :icon: false
 Let the matrix of technical coefficients be given by 
 \begin{equation*}
@@ -149,7 +131,7 @@ and let the vector of outputs be given by $Q = \begin{bmatrix} 100 \\ 200 \\ 100
 Find the input-output table of this model.
 :::
 
-````{solution} P46
+````{solution} P45
 :class:dropdown
 The first column of the matrix $A$ denotes the percentages that the outputs of all sectors play in the production of $1$ unit of output of the first sector. Therefore, in order to find the intermediate outputs used by the first sector, we need to multiply the first column of the matrix $A$ by $Q_1 = 100.$ We can use the same reasoning to find the intermediate outputs used by the second and the third sector - we multiply the second and the third column of the matrix $A$ by $Q_2$ and $Q_3,$ respectively. Therefore, the input-output table is given by
 \begin{equation*}
@@ -163,8 +145,8 @@ Q_i & Q_{ij} & q_i \\
 \end{equation*}
 ````
 
-:::{note} Problem 4.7
-:label: P47
+:::{note} Problem 4.6
+:label: P46
 :icon:false
 The following input-output table is describing a certain economy:
 \begin{equation*}
@@ -176,25 +158,25 @@ Q_i & Q_{ij} & q_i \\
 150 & 20 \quad 30 \quad 40 & 60
 \end{array}
 \end{equation*}
-Find the new input-output table if the new vector of outputs is $Q^{\text{new}} = \begin{bmatrix} 110 \\ 165 \\ 165 \end{bmatrix}.$
+Find the new input-output table if the new vector of outputs is $Q^{\text{new}} = \begin{bmatrix} 110 \\ 180 \\ 135 \end{bmatrix}.$
 :::
 
-````{solution} P47
+````{solution} P46
 :class:dropdown
 The first sector has increased its output $\frac{110}{100} = 1.1$ times, so the intermediate outputs that are used by the first sector must increase $1.1$ times as well. Therefore, to find new intermediate outputs that are being used by the first sector, we need to multiply the old ones by $1.1.$ In the same way we can find the intermediate outputs used by the second and the third sector. So, the input-output table is given by
 \begin{equation*}
 \begin{array}{c | c | c}
 Q_i & Q_{ij} & q_i \\
 \hline 
-110 & 33 \quad 33 \quad 33 & 11 \\
-165 & 33 \quad 22 \quad 66 & 44 \\
-165 & 22 \quad 33 \quad 44 & 66
+110 & 33 \quad 36 \quad 27 & 14 \\
+180 & 33 \quad 24 \quad 54 & 69 \\
+135 & 22 \quad 36 \quad 36 & 41
 \end{array}
 \end{equation*}
 ````
 
-:::{note} Problem 4.8
-:label: P48
+:::{note} Problem 4.7
+:label: P47
 :icon:false
 The following input-output table is describing a certain economy:
 \begin{equation*}
@@ -208,7 +190,7 @@ Q_i & Q_{ij} & q_i \\
 Find the new input-output table if the new vector of demands is $q^{\text{new}} = \begin{bmatrix} 120 \\ 60 \end{bmatrix}.$
 :::
 
-````{solution} P48
+````{solution} P47
 :class: dropdown
 Remember, the first column of the matrix $[Q_{ij}]$ tells us how many units of all sectors are being used by the first sector in order to produce $Q_1$ units of output. Similarly, the second column of the matrix $[Q_{ij}]$ tells us how many units of all sectors are being used by the second sector in order to produce $Q_2$ units of output. Hence, we can easily find the matrix of technical coefficients:
 \begin{equation*}
@@ -218,13 +200,16 @@ Therefore, the technology matrix is given by
 \begin{equation*}
 T = \begin{bmatrix} 4/5 & -1/2 \\ -2/5 & 1 \end{bmatrix}.
 \end{equation*}
-The inverse of the technology matrix is then given by
+Using the relationship between $Q^{\text{new}}$ and $q^{\text{new}}$ given by the formula $T \cdot Q^{\text{new}} = q^{\text{new}}$ we get:
 \begin{equation*}
-T^{-1} = \begin{bmatrix} 5/3 & 5/6 \\ 2/3 & 4/3 \end{bmatrix}.
+\begin{split}
+T \cdot Q^{\text{new}} = q^{\text{new}} & \implies \begin{bmatrix} \frac{4}{5} Q_1 - \frac{1}{2}Q_2 \\ -\frac{2}{5}Q_1 + Q_2 \end{bmatrix}  = \begin{bmatrix} 120 \\ 60 \end{bmatrix} \\
+& \implies \begin{cases} \frac{4}{5} Q_1 - \frac{1}{2}Q_2 = 120 \\ -\frac{2}{5}Q_1 + Q_2 = 60 \end{cases}
+\end{split}
 \end{equation*}
-Now we have
+This is a system we can easily solve, and hence we find that
 \begin{equation*}
-Q^{\text{new}} = T^{-1} \cdot q^{\text{new}} = \begin{bmatrix} 250 \\ 160 \end{bmatrix}.
+Q^{\text{new}} = \begin{bmatrix} 250 \\ 160 \end{bmatrix}.
 \end{equation*}
 Now we can find the input-output table in the same way as we did in [](#P46):
 \begin{equation*}
@@ -237,8 +222,8 @@ Q_i & Q_{ij} & q_i \\
 \end{equation*}
 ````
 
-:::{note} Problem 4.9
-:label: P49
+:::{note} Problem 4.8
+:label: P48
 :icon: false
 Let the matrix of technical coefficients be given by 
 \begin{equation*}
@@ -251,7 +236,7 @@ Q_1 = 10, \quad Q_3 = 30.
 If the demand of the second sector is $q_2 = 1,$ find the input-output table.
 :::
 
-````{solution} P49
+````{solution} P48
 :class: dropdown
 In [](#P46) we have seen that it is very easy to find the input-output table if we know the vector of outputs $Q = \begin{bmatrix} Q_1 & Q_2 & Q_3 \end{bmatrix}^T.$ So, we only need to find the total output $Q_2$ of the second sector in order to know what is $Q$ equal to. That output $Q_2$ can be calculated as follows:
 \begin{equation*}
@@ -279,8 +264,8 @@ Q_i & Q_{ij} & q_j \\
 ````
 
 
-:::{note} Problem 4.10
-:label: P410
+:::{note} Problem 4.9
+:label: P49
 :icon:false
 Let the matrix of technical coefficients be given by 
 \begin{equation*}
@@ -293,7 +278,7 @@ q_1 = 116, \quad q_3 = 114.
 If the total output of the second sector is $Q_2 = 160,$ find the input-output table.
 :::
 
-````{solution} P410
+````{solution} P49
 :class:dropdown
 Again, as we have seen in [](#P46), if we know the vector of outputs $Q$ then it is easy to find the input-output table. Hence, we want to find the total outputs $Q_1$ and $Q_3$ of the first and the third sector. Following the same reasoning as in [](#P49), those outputs are given by
 \begin{equation*}
