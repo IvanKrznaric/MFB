@@ -79,7 +79,7 @@ Number of solutions of a system is completely determined by the rank.
 ## <span class = "h2-num">4.3 </span><span class = "h2-text"> Input-output analysis </span>
 In this section we are going to use all of the things we learned about matrices and systems of linear equations to study one important economic model called **<span style = "color:green"> the input-output model </span>**. 
 
-That models describes a scenario in which an economy is comprised of $n$ sectors that are interrelated with one another. The way in which those sectors are connected is the following: each of those sectors produces one type of output,  and the inputs of each sector needed for its production process are outputs of all the sectors in the economy. Also, each sector sets aside a part of its output for consumption. That is the part that is not being used in further production and is called the **<span style = "color:green"> final demand</span>** of that sector. Part of the output of a sector that is being used as input for production of output of other sectors is called **<span style = "color:green"> intermediate output</span>**.
+That model describes a scenario in which an economy is comprised of $n$ sectors that are interrelated with one another. The way in which those sectors are connected is the following: each of those sectors produces one type of output,  and the inputs of each sector needed for its production process are outputs of all the sectors in the economy. Also, each sector sets aside a part of its output for consumption. That is the part that is not being used in further production and is called the **<span style = "color:green"> final demand</span>** of that sector. Part of the output of a sector that is being used as input for production of output of other sectors is called **<span style = "color:green"> intermediate output</span>**.
 
 
 The assumptions of the input-output model are:
@@ -104,7 +104,7 @@ We are also going to be using the following formulas for the input-output model:
 :label: io-formulas
 - $\displaystyle a_{ij} = \frac{Q_{ij}}{Q_j}$,
 - $\displaystyle Q_i = Q_{i1} + \dots + Q_{in} + q_i$,
-- $\displaystyle TQ = q$,
+- $\displaystyle T \cdot Q = q$,
 - $\displaystyle T \cdot Q^{\text{new}} = q^{\text{new}}$.
 :::
 
