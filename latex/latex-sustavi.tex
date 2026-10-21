@@ -1,25 +1,50 @@
 \documentclass[tikz,xcolor = {svgnames, dvipsnames}, border = 2mm]{standalone}
 \usepackage{tikz}
-\usetikzlibrary{shapes,positioning,decorations.pathmorphing, calc, arrows}
+\usetikzlibrary{shapes, positioning,  decorations.pathmorphing, calc, arrows}
 \usepackage{amsmath}
-\begin{document}
-\begin{tikzpicture}[node distance = 1.5 cm, redsquare/.style={rectangle, draw=red!60, fill=red!5, very thick, minimum size=5mm}, bluesquare/.style={rectangle, draw=blue!60, fill=blue!5, very thick, minimum size=5mm}, greensquare/.style={rectangle, draw=green!60, fill=green!5, very thick, minimum size=5mm}]
-\node[redsquare] (sustavi) {$AX = B$};
-\node (centar) [below of = sustavi]{};
-\node[bluesquare] (manji rang) [ left = of centar] {$r(A) \neq r(A|B)$};
-\node (tekst 1) [below = 0.3 cm of manji rang] {$\rightarrow $\textbf{no solutions}};
-\node[bluesquare] (jednak rang) [below right  = of centar] {$r(A) = r(A|B)$};
-\node[greensquare] (parametri) [below left = of jednak rang] {$r(A) < \# \text{ unknowns }$};
-\node (tekst) [below = 0.3 cm of parametri] {$\rightarrow$ \textbf{infinitely many solutions}};
-\node  (broj) [below  = 0.3 cm of tekst] {\textcolor{ForestGreen}{\textbf{How many parameters?}}};
-\node(parametri 2)[below = 0.1 cm of broj] {$\# unknowns - r(A)$};
-\node[greensquare] (jedinstveno) [below right = of parametri] {$r(A) = \# \text{ unknowns }$};
-\node (tekst 3) [below = 0.3 cm of jedinstveno]{$\rightarrow$ \textbf{unique solution}};
 
-\draw[->] (sustavi.south) --(manji rang.north);
-\draw[->](sustavi.south) -- (jednak rang.north);
-\draw[->](jednak rang.south) -- (parametri.north);
-\draw[->](jednak rang.south) -- (jedinstveno.north);
-\draw[->](tekst.south) -- ( broj.north);
+\tikzstyle{red} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=red!60, very thick, fill=red!5]
+\tikzstyle{blue} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=blue!60, very thick, fill=blue!5]
+\tikzstyle{green} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=green!60, very thick, fill=green!5]
+\tikzstyle{orange} = [rectangle, minimum width=3cm, minimum height=1cm, text centered, draw=orange!60, very thick, fill=orange!5]
+
+\begin{document}
+
+\begin{tikzpicture}[node distance = 2.5cm]
+
+	%=====  ČVOROVI =====
+	\node (start) [red] {$AX = B, \quad A \in M_{mn}$};
+	\node (centar) [below of = start] {};
+	\node[blue] (nema rj) [left = of centar, minimum width = 2.5 cm] {$r(A) \neq r(A|B)$};
+	\node (tekst 1) [below = 0.3cm of nema rj] {$\bullet$ \textbf{ no solution}};
+
+	\node[blue] (ima rj) [below right = of centar, minimum width = 2.5 cm] {$r(A) = r(A|B)$};
+	\node (centar 2) [below of = ima rj] {};
+
+	\node[green] (A) [below left = 4 cm of centar 2, minimum width = 2.5 cm] {$m = n$};
+	\node[green] (B) [below = -1cm of centar 2, minimum width = 2.5 cm] {$m < n$};
+	\node (tekst 2) [below = 0.3cm of B] {$\bullet$ \textbf{ infinitely many solutions}};
+	\node (tekst 3) [below = 0.3cm of tekst 2] {$\bullet$ $n-r(A)$ \textbf{parameters}};
+	\node[green] (C) [below right = 4 cm of centar 2, minimum width = 2.5 cm] {$n < m$};
+	\node (tekst 4) [below = 0.3 cm of C] {$\bullet$ $m-n$ \textbf{superfluous equations}};
+	\node (tekst 5) [below = 0.3 cm of tekst 4] {$\bullet$ ignore them and see the case $m = n$};
+
+	\node[orange] (jedinstveno) [below left = 3 cm of A, minimum width = 2.5 cm] {$r(A) = n$};
+	\node (tekst 6) [below = 0.3 cm of jedinstveno] {$\bullet$ \textbf{ unique solution}};
+	\node[orange] (opce) [below  = 3cm of A, minimum width = 2.5 cm] {$r(A) < n$};
+	\node (tekst 7) [below = 0.3 cm of opce] {$\bullet$ \textbf{ infinitely many solutions}};
+	\node (tekst 8) [below = 0.3 cm of tekst 7] {$\bullet$ $n-r(A)$ \textbf{parameters}};
+
+	%===== STRELICE =====
+	\draw[->]  (start.south) -- (nema rj.north);
+	\draw[->] (start.south) -- (ima rj.north);
+	\draw[->] (ima rj.south) to [bend right = 50] (A.north);
+	\draw[->] (ima rj.south) -- (B.north);
+	\draw[->] (ima rj.south) to [bend left = 50] (C.north);
+	\draw[dashed, ->] (C.west) --  (A.east);
+	\draw[->] (A.south) -- (jedinstveno.north);
+	\draw[->] (A.south) -- (opce.north);
 \end{tikzpicture}
+
+
 \end{document}

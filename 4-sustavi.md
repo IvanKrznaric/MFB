@@ -92,7 +92,7 @@ x+y-z+w = 0 \\ 2x-y+z-w = 0
 \end{equation*}
 :::
 The following diagram tells us the whole story about the number of solutions of a given system of linear equations.
-:::{figure} ./slike/Sustavi.jpg
+:::{figure} ./slike/sustavi.jpg
 Number of solutions of a system is completely determined by the rank.
 :::
 
