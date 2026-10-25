@@ -23,7 +23,7 @@ Find the domain of the function $\displaystyle f(x) = \ln \left( \frac{x+1}{x-1}
 :::
 
 ## <span class = "h2-num">5.2 </span><span class = "h2-text"> Composition of functions </span>
-The main thing about functions is that you can plug numbers into the function, and the function returns back some value. But, numbers aren't the only thing that can be plugged-into functions.
+The main thing about functions is that you can plug numbers into a function, and the function returns back some number as its value. But, numbers aren't the only thing that can be plugged-into a function: we can also plug one function into another. The operation of pluggin-in one function into another is called **<span style = "color:green"> composition of functions. </span>** 
 
 :::{caution} <span style = "color:#8B4000"> Example </span>
 :icon:false
@@ -41,8 +41,6 @@ g(f(x)) &= g(3x-1) \\ &= (3x-1)^2 + 5 \\ &= 9x^2-6x+6
 \end{equation*}
 :::
 
-The operation of pluggin-in one function inside another is called **<span style = "color:green"> composition of functions. </span>** When we are trying to recognize whether or not a given function is a composition of two or more functions, we are always moving from the "outside" to the "inside", where the "outside" function is, generally speaking, the one that appears first.
-
 :::{note} Problem 5.4
 :icon: false
 Let 
@@ -51,6 +49,8 @@ f(x) = \sqrt[3]{x}, \quad g(x) = 2x^2 -13x+17.
 \end{equation*}
 Compute the compositions $f(g(x))$ and $g(f(x)).$
 :::
+
+When we are trying to recognize whether or not a given function is a composition of two or more functions, we are always moving from the "outside" to the "inside", where the "outside" function is, generally speaking, the one that appears first.
 
 :::{note} Problem 5.5
 :icon:false
