@@ -8,25 +8,19 @@
 :::
 
 :::{note} Problem 5.1
-:icon:false
-Find the domains of the following functions:
-\begin{equation*}
-\begin{split}
-&a) \hspace{0.1 cm} f(x) = 3x^2-5x+9, \quad b) \hspace{0.1 cm} g(x) = \sqrt{x+9}, \quad c) \hspace{0.1 cm} h(x) = \sqrt[3]{x+7}, \\
-& \hspace{0.2 cm} \\
-& d) \hspace{0.1 cm} u(x) = \frac{-2x^2+x+1}{x^2+x-6}, \quad e) \hspace{0.1 cm} v(x) = \ln(x-3)
-\end{split}
-\end{equation*}
+:icon: false
+Find the domain of the function $\displaystyle f(x) = \frac{-2x^2+x+1}{x^2+x-6}$ and compute $f(0)$.
 :::
 
 :::{note} Problem 5.2
-:icon:false
-Find the domains of the following functions:
-\begin{equation*}
-f(x) = \ln \left( \frac{x+1}{x-1} \right), \quad g(x) = \frac{1}{\sqrt{2-3x^4}}, \quad h(x) = x^2 e^{-2x} +e^3.
-\end{equation*}
+:icon: false
+Find the domain of the function $\displaystyle f(x) = \sqrt{x^2-3x-10}$ and compute $f(-11)$.
 :::
 
+:::{note} Problem 5.3
+:icon: false
+Find the domain of the function $\displaystyle f(x) = \ln \left( \frac{x+1}{x-1} \right)$ and compute $f(7)$.
+:::
 
 ## <span class = "h2-num">5.2 </span><span class = "h2-text"> Composition of functions </span>
 The main thing about functions is that you can plug numbers into the function, and the function returns back some value. But, numbers aren't the only thing that can be plugged-into functions.
@@ -49,12 +43,16 @@ g(f(x)) &= g(3x-1) \\ &= (3x-1)^2 + 5 \\ &= 9x^2-6x+6
 
 The operation of pluggin-in one function inside another is called **<span style = "color:green"> composition of functions. </span>** When we are trying to recognize whether or not a given function is a composition of two or more functions, we are always moving from the "outside" to the "inside", where the "outside" function is, generally speaking, the one that appears first.
 
-:::{note} Problem 5.3
+:::{note} Problem 5.4
 :icon: false
-Let $f(x) = \sqrt[3]{x}$ and $g(x) = 2x^2 -13x + 17.$ Compute the compositions $f(g(x))$ and $g(f(x)).$
+Let 
+\begin{equation*}
+f(x) = \sqrt[3]{x}, \quad g(x) = 2x^2 -13x+17.
+\end{equation*}
+Compute the compositions $f(g(x))$ and $g(f(x)).$
 :::
 
-:::{note} Problem 5.4
+:::{note} Problem 5.5
 :icon:false
 Consider the following compositions:
 - $\displaystyle F(x) = \sqrt{5x^2-4x}$
@@ -68,9 +66,19 @@ For each composition determine which function is the "outside" function and whic
 
 Intuitively, **<span style = "color:green"> the limit </span>** of a function represents the "limiting" value of a function as the independent variable $x$ approaches a certain value, or gets arbitrarily large or small.
 
-The main reason why we are studying limits of functions is so that we can understand the definition of the *derivative* of a function that we are going to be covering in the next chapter.
+:::{note} Problem 5.6
+:icon: false
+Find the limit $\displaystyle \lim_{x \to 4} \frac{\sqrt{x} + 32}{x^2+1}$.
+:::
 
-:::{note} Problem 5.5
+We are going to be interested in computing limits of the following forms:
+\begin{equation*}
+    \frac{c}{\infty}, \quad \frac{\infty}{\infty}, \quad \infty - \infty, \quad \frac{0}{0}, \quad 1^\infty.
+\end{equation*}
+
+### Limits of the form $\frac{c}{\infty}, c \in \mathbb{R}$
+
+:::{note} Problem 5.7
 :icon:false
 Find the limit $\displaystyle \lim_{x \to \infty} \frac{2}{x}.$
 :::
@@ -79,35 +87,28 @@ Find the limit $\displaystyle \lim_{x \to \infty} \frac{2}{x}.$
 As $x$ gets arbitrarily large, the value of the function $\frac{2}{x}$ get closer and closer to $0$ - hence, the limit is $0.$
 :::
 
-:::{note} Problem 5.6
-:icon:false
-Find the limit $\displaystyle \lim_{x \to \infty} \frac{1}{\sqrt{x}}.$
-:::
+### Limits of the form $\frac{\infty}{\infty}$
 
-:::{figure} ./video/Limes2.mp4
-As $x$ gets arbitrarily large, the value of the function $\frac{1}{\sqrt{x}}$ gets closer and closer to $0$ - hence, the limit is $0.$
-:::
-
-In the previous problems, we could find the value of the limit by simply "plugging-in" the value $x$ approaches into the function. In the following problems, if we "plug-in" the value $x$ is approaching, we will get one of the following expressions:
-\begin{equation*}
-\frac{\infty}{\infty}, \quad \infty - \infty, \quad \frac{0}{0}.
-\end{equation*}
-In these cases, we need to simplify the expression we are dealing with in order to find the limit.
-
-:::{note} Problem 5.7
+:::{note} Problem 5.8
 :icon:false
 Find the limit $\displaystyle \lim_{x \to \infty} \frac{2x^2+x+1}{2x^2+3}.$
 :::
 
-:::{note} Problem 5.8
+### Limits of the form $\infty - \infty$
+
+:::{note} Problem 5.9
 :icon:false
 Find the limit $\displaystyle \lim_{x \to \infty} \sqrt{x} (\sqrt{x+1}-\sqrt{x}).$
 :::
 
-:::{note} Problem 5.9
+### Limits of the form $\frac{0}{0}$
+
+:::{note} Problem 5.10
 :icon: false
-Find the limit $\displaystyle \lim_{x \to 1} \frac{2x^2-6x+4}{3x^2-12x+9}.$
+Find the limit $\displaystyle \lim_{x \to 1} \frac{x^2-1}{x^2-4x+3}.$
 :::
+
+### Limits of the form $1^\infty$
 
 In the following problem, we are going to use the following formula:
 \begin{equation*}
@@ -149,7 +150,7 @@ a = \lim_{x \to \infty} p \left(1+\frac{r}{x}\right)^x = p \cdot \lim_{x \to \in
 \end{equation*}
 :::
 
-:::{note} Problem 5.10
+:::{note} Problem 5.11
 :icon:false
 Find the limit $\displaystyle \lim_{x \to \infty} \left(\frac{x+2}{x}\right)^{7x}.$
 :::
