@@ -4,7 +4,7 @@
 
 :::{caution} <span style = "color:#8B4000"> Example </span>
 :icon: false
-Imagine you have invested some amount of money into a bond fond, and the value $V$ of your investment depends on the interest rate $r$, so that $V = V(r).$ Suppose that the interest rate slightly increases from $r$ to $r+h,$ where $h$ is some small number.
+Imagine you have invested some amount of money into an index fund, and the value $V$ of your investment depends on the interest rate $r$, so that $V = V(r).$ Suppose that the interest rate slightly increases from $r$ to $r+h,$ where $h$ is some small number.
 - How can you approximate the change in your investment value due to this small increase in interet rate?
 - How can you express the average rate of change of the investment value?
 - What happens to this average rate of change as the change in interest rate becomes very very small?
@@ -25,28 +25,29 @@ Visual interpretation of the derivative - the derivative of a function $f$ at a 
 
 ## <span class = "h2-num">6.2 </span><span class = "h2-text"> Derivative of elementary functions </span>
 
-
 :::{danger} <span style = "color:red"> Basic rules for differentiation</span>
 :icon:false
-:class: dropdown
 \begin{align*}
-(f+g)' &= f' + g' & & & & & (c \cdot f)' &= c \cdot f' \\
+(f \pm g)' &= f' \pm g' & & & & & (c \cdot f)' &= c \cdot f' \\
+& & & & & & \\ 
 (f \cdot g)' &= f' \cdot g + f \cdot g' & & & & & \left( \frac{f}{g}\right)' &= \frac{f' \cdot g - f \cdot g'}{g^2} \\
 \end{align*}
 :::
 
-:::{danger} <span style = "color:red"> Table of derivatives </span>
-:icon:false
-:class:dropdown
-\begin{align*}
-c' &= 0 & & & & & (x^n)' &= n \cdot x^{n-1} & & & & & (\sqrt{x})' &= \frac{1}{2\sqrt{x}}\\
-(a^x)' &= a^x \cdot \ln(a) & & & & & (e^x)' &= e^x & & & & & (\ln(x))' &= \frac{1}{x}
-\end{align*}
-:::
+```{csv-table} Table of derivatives
+:header: "Function", "Derivative"
+
+"$f(x) = x^n$", "$f'(x) = n \cdot x^{n-1}$"
+"$f(x) = c$", "$f'(x) = 0$"
+"$f(x) = a^x$", "$f'(x) = a^x \cdot \ln(a)$"
+"$f(x) = \ln(x)$", "$ \displaystyle f'(x) = \frac{1}{x}$"
+"$f(x) = \sqrt{x}$", "$ \displaystyle f'(x) = \frac{1}{2\sqrt{x}}$"
+"$f(x) = e^x$", "$f'(x) = e^x$"
+```
 
 :::{note} Problem 6.1
 :icon: false
-Find the derivative of the function $f(x) = x^3+x+125.$
+Find the derivative of the function $f(x) = -2x^4+7x^2-5x+125.$
 :::
 
 :::{note} Problem 6.2
@@ -66,13 +67,13 @@ Find the derivative of the function $\displaystyle f(x) = 3x \cdot 3^x.$
 
 :::{note} Problem 6.5
 :icon: false
-Find the derivative of the function $\displaystyle f(x) = \frac{2^x \cdot (5x+7)}{x^2+5} \cdot \sqrt{x}.$
+Find the derivative of the function $\displaystyle f(x) = \frac{2^x \cdot (5x+7)}{x^2+5} \cdot x.$
 :::
 
 ## <span class = "h2-num">6.3 </span><span class = "h2-text"> Derivative of composition of functions </span>
 
 The following formula tells us how to find derivative of compositions:
-:::{danger} <span style = "color:red"> Derivative of a composition of functions</span>
+:::{danger} <span style = "color:red"> Derivative of a composition of functions (chain rule) </span>
 :icon:false
 \begin{equation*}
 f(g(x))' = f'(g(x)) \cdot g'(x). 
@@ -109,32 +110,22 @@ Find the derivative of the function $\displaystyle f(x) = x^2 \cdot e^{x \cdot \
 
 :::{note} Problem 6.11
 :icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = 17.$
+Using the definition, find the derivative of the function $\displaystyle f(x) = x^2.$
 :::
 
 :::{note} Problem 6.12
 :icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = 5x+7.$
-:::
-
-:::{note} Problem 6.13
-:icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = 2x^2+3x-130.$
-:::
-
-:::{note} Problem 6.14
-:icon: false
-Using the definition, find the derivative of the function $\displaystyle f(x) = \sqrt{x}.$
+Using the definition, find the derivative of the function $\displaystyle f(x) = \frac{1}{x}.$
 :::
 
 ## <span class = "h2-num">6.5 </span><span class = "h2-text"> Higher-order derivatives </span>
 
-:::{note} Problem 6.15
+:::{note} Problem 6.13
 :icon: false
 Find the first, second and the third derivative of the function $f(x) = 4x \cdot \ln(x).$ 
 :::
 
-:::{note} Problem 6.16
+:::{note} Problem 6.14
 :icon: false
-Find the first, second and the third derivative of the function $\displaystyle f(x) = \frac{2+x}{2-x}.$ 
+Find the first and the second derivative of the function $\displaystyle f(x) = \frac{x}{x^2+25}.$ 
 :::
