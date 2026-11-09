@@ -168,7 +168,6 @@ Since the $3\%$ increase of the initial revenue is equal to $1.03R(A_0) = 1193.5
 :label: P710
 Lucija, a financial analyst at a certain hedge fund, was given a task to model the value $P$ of the fund's portfolio with respect to the interest rate $r$. Based on the available data, Lucija has modelled the relationship between $r$ and $P = P(r)$ with the following equation:
 \begin{equation*}
-\label{eqn1}
 (r-3)^2 \cdot P + P^4 = e^{4r} \cdot (r-3) + 16.
 \end{equation*}
 If the current interest rate of $r = 3$ increases to $r = 3.75,$ how will that affect the value $P$ of the portfolio this hedge fund manages?
@@ -186,7 +185,9 @@ Because the differential approximates the exact change, we know that
 \begin{equation*}
 \Delta P(r_0) \approx P'(r_0) \cdot dr,
 \end{equation*}
-where $r_0 = 3$ is the initial interest rate. In our case, we know that $dr = 0.75,$ and we want to compute $\Delta P(r_0) = \Delta P(3).$ Hence, the only thing we are missing is the value of the derivative $P'(3).$ Since the function $P$ is given implicitly, we use implicit differentiation to compute the derivative:
+where $r_0 = 3$ is the initial interest rate. In our case, we know that $dr = 0.75,$ and we want to compute $\Delta P(r_0) = \Delta P(3).$ Hence, the only thing we are missing is the value of the derivative $P'(3).$
+
+Since the function $P$ is given implicitly, we use implicit differentiation to compute the derivative:
 \begin{equation*}
 \begin{split}
 (r-3)^2 \cdot P + P^4 &= e^{4r} \cdot (r-3) + 16 \quad /' \\
@@ -197,7 +198,7 @@ Pluggin-in $r = 3,$ we get
 \begin{equation*}
 4P(3)^3P'(3) = e^{12}.
 \end{equation*}
-Plugging-in $r = 3$ into [the defining equation for $P$](#eqn1), we get 
+Plugging-in $r = 3$ into the equation that defines the function $P(r)$, we get 
 \begin{equation*}
 P(3)^4 = 16 \quad / \sqrt[4]{}  \implies P(3) = 2.
 \end{equation*}
