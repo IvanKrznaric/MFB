@@ -46,7 +46,7 @@ Let the function $y = y(x)$ be implicitly given by the equation
 \begin{equation*}
 x^3 y^2 + y^5 = x^2 e^x+32.
 \end{equation*}
-If $y(0) = 2,$ find the value of $y'(2).$
+If $y(0) = 2,$ find the value of $y'(0).$
 :::
 
 :::{note} Problem 7.4
