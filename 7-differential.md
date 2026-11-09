@@ -242,7 +242,7 @@ Because the differential approximates the exact change, we know that
 Therefore, we have the following approximation
 \begin{equation*}
 \begin{split}
-\lvert P'(2) \cdot dI \rvert \approx \lvert \Delta P(2) \rvert &\leq \frac{1}{100} P(2). \\
+\lvert P'(2) \cdot dI \rvert \approx \lvert \Delta P(2) \rvert &\leq \frac{5}{100} P(2). \\
 \iff \lvert P'(2) \cdot dI \rvert &\leq 137.2
 \end{split}
 \end{equation*}
