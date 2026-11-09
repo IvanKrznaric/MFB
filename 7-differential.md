@@ -73,33 +73,39 @@ Find the derivative of the function $\displaystyle f(x) = (x^2-6x+3)^{\sqrt{x+7}
 
 :::{note} Problem 7.7
 :icon: false
-Let $\displaystyle f(x) = (x-5)^\frac{e^{x^2}}{2}.$ Find the value of $f'(6).$
+Let $\displaystyle f(x) = (x-5)^{e^{12x}}.$ Find the value of $f'(6).$
 :::
 
 ## <span class = "h2-num">7.3 </span><span class = "h2-text"> Differential of a function </span>
 Remember that the derivative of the function $f$ is defined as the limit
 \begin{equation*}
-f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}.
+f'(x) = \lim_{dx \to 0} \frac{f(x+dx)-f(x)}{dx}.
 \end{equation*}
 
-If $h$ is very very close to $0$, then it follows that 
+If $dx$ is very very close to $0$, then it follows that
 \begin{equation*}
-\label{approx}
-f(x+h)-f(x) \approx f'(x) \cdot h.
+f(x + dx) - f(x) \approx f'(x) \cdot dx.
 \end{equation*}
 
 This approximation is very important to us, so we want to give special names to the quantities above:
 
-- **<span style = "color: green"> small displacement</span>** $\dots dx = h$
-- **<span style = "color:green"> exact change </span>** $\dots \Delta f(x_0) = f(x_0 + dx)-f(x_0)$
-- **<span style = "color:green"> the differential </span>** $\dots df(x_0) = f'(x_0) \cdot dx.$
-
-Therefore, the [equation above](#approx) tells us that 
+:::{tip} <span style = "color : #228B22"> Definition </span>
+:icon:false
+Let $f(x)$ be a given function, let $x_0$ be a given point and let $dx$ be a small increment of the independent variable.
+- **<span style = "color:green"> the exact change </span>** in the functional value at a point $x_0$ is given by
+    \begin{equation*}
+        \Delta f(x_0) = f(x_0 + dx) - f(x_0).
+    \end{equation*}
+- **<span style = "color:green"> the differential </span>** of the function $f$ at a point $x_0$ is given by
+    \begin{equation*}
+        df(x_0) = f'(x_0)  \cdot dx
+    \end{equation*}
+:::
+Therefore, the equation above tells us that 
 \begin{equation*}
-\label{differential}
 \Delta f(x_0) \approx df(x_0).
 \end{equation*}
-In other words, **<span style = "color:red">the exact change in the value of the function can be approximated by the differential.</span>**
+In other words, **the exact change in the value of the function can be approximated by the differential.**
 
 Of course, the approximation can be accurate or not, so we need a way of measuring the error we make when using the differential to approximate the exact change:
 - **<span style = "color:green"> absolute error </span>** $ \displaystyle \dots \lvert \Delta f(x_0) - df(x_0)\rvert$
@@ -136,11 +142,15 @@ Since $R(A_0) \approx 1158.81,$ the equation that we need to solve is the follow
 \end{equation*}
 This equation is very complicated and we don't know how to solve it using any methods that we know of. Therefore, we need to approach this problem in some other way.
 
-Using the fact that [the differential approximates the exact change](#differential), we have that
+Using the fact that the differential approximates the exact change, we have that
 \begin{equation*}
 \Delta R(A_0) \approx R'(A_0) \cdot dA,
 \end{equation*}
-where $A_0 = 14600$ is the initial amount of money being invested in advertising. If the business wants to increase their revenue by $3\%,$ then $\Delta R(A_0) = 0.03R(A_0).$ So, from the approximation above, the additional amount of money that needs to be invested in advertising is 
+where $A_0 = 14600$ is the initial amount of money being invested in advertising. If the business wants to increase their revenue by $3\%,$ then
+\begin{equation*}
+    \Delta R(A_0) = 0.03R(A_0).
+\end{equation*}
+So, from the approximation above, the additional amount of money that needs to be invested in advertising is 
 \begin{equation*}
 dA \approx \frac{\Delta R(A_0)}{R'(A_0)} = \frac{0.03R(A_0)}{R'(A_0)} = 725.02
 \end{equation*}
@@ -172,7 +182,7 @@ If we would like to know how the given change in the interst rate would affect t
 \end{equation*}
 Again, this is a rather complicated equation that we don't know how to solve so we need to change our approach.
 
-Because [the differential approximates the exact change](#differential), we know that
+Because the differential approximates the exact change, we know that
 \begin{equation*}
 \Delta P(r_0) \approx P'(r_0) \cdot dr,
 \end{equation*}
@@ -224,7 +234,7 @@ Our task is to find by how much can the market index change so that Marko's func
 \end{equation*}
 Of course, this inequality is far to complicated for us to solve, so we need to change our approach.
 
-Because [the differential approximates the exact change](#differential), we know that
+Because the differential approximates the exact change, we know that
 \begin{equation*}
 \Delta P(2) \approx P'(2) \cdot dI.
 \end{equation*} 
@@ -250,7 +260,7 @@ Now, the problem boils down to a simple inequality
 \implies \lvert dI \rvert &\leq \frac{137.2}{P'(2)} = 0.033
 \end{split}
 \end{equation*}
-Therefore, we have estimated that if the market index changes up to $\pm 0.033,$ accuracy of Marko's model will be withing $5\%$ of the actual stock price.
+Therefore, we have estimated that if the market index changes up to $\pm 0.033,$ accuracy of Marko's model will be within $5\%$ of the actual stock price.
 
 In order to see if our estimates are accurate or not, let's compute the exact change in portfolio value given that the market index changes by at most $\pm 0.03$:
 \begin{equation*}
