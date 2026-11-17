@@ -40,11 +40,6 @@ Find the intervals over which the function $\displaystyle f(x) = \frac{x^2}{4-x}
 Find the intervals over which the function $\displaystyle f(x) = \frac{1-\sqrt{x}}{1+\sqrt{x}}$ is increasing and decreasing.
 :::
 
-:::{note} Problem 8.4
-:icon: false
-Find the intervals over which the function $\displaystyle f(x) = (2x^2+x)e^{-x}$ is increasing and decreasing.
-:::
-
 :::{error} Common mistake on the Midterm/Exam
 :class: dropdown
 A common mistake that students make when they are asked to define an increasing function is that they say that a function is increasing **if** $f'(x) \geq 0.$ That statement is **<span style = "color:red"> not correct! </span>** \
