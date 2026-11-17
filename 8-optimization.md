@@ -58,7 +58,7 @@ Of course, if a function $f$ is increasing, then $f'(x) \geq 0,$ but having a po
 3. Use the $2^{\text{nd}}$ derivative to determine which points are minimums and which are maximums.
 :::
 
-:::{note} Problem 8.5
+:::{note} Problem 8.4
 :icon: false
 Find the local extreme points and the corresponding extreme values of the function
 \begin{equation*}
@@ -70,7 +70,7 @@ Find the local extreme points and the corresponding extreme values of the functi
 Graph of the function $f(x) = 2x^3 - 6x$. The points $x_1 = -1$ and $x_2 = 1$ are the local extrema, with the first one being a local maximum, and the second one being a local minimum.
 :::
 
-:::{note} Problem 8.6
+:::{note} Problem 8.5
 :icon: false
 Find the local extreme points and the corresponding extreme values of the function
 \begin{equation*}
@@ -78,7 +78,7 @@ Find the local extreme points and the corresponding extreme values of the functi
 \end{equation*}
 :::
 
-:::{note} Problem 8.7
+:::{note} Problem 8.6
 :icon: false
 Find the local extreme points and the corresponding extreme values of the function
 \begin{equation*}
@@ -86,7 +86,7 @@ Find the local extreme points and the corresponding extreme values of the functi
 \end{equation*}
 :::
 
-:::{note} Problem 8.8
+:::{note} Problem 8.7
 :icon: false
 Find the local extreme points and the corresponding extreme values of the function
 \begin{equation*}
@@ -107,7 +107,7 @@ Find the local extreme points and the corresponding extreme values of the functi
 3. Make the table of the signs of the $2^\text{nd}$ derivative $f''$ and read off the intervals.
 :::
 
-:::{note} Problem 8.9
+:::{note} Problem 8.8
 :icon: false
 Find the intervals over which the function $\displaystyle f(x) = 2x^3-6x$ is convex and concave.
 :::
@@ -116,12 +116,12 @@ Find the intervals over which the function $\displaystyle f(x) = 2x^3-6x$ is con
 Graph of the function $f(x) = 2x^3 - 6x$. The function starts off beign concave on $\langle -\infty, 0 \rangle$ and then becomes convex on $\langle 0, \infty \rangle$. 
 :::
 
-:::{note} Problem 8.10
+:::{note} Problem 8.9
 :icon: false
 Find the intervals over which the function $\displaystyle f(x) = e^{-x}(1+x^2)$ is convex and concave.
 :::
 
-:::{note} Problem 8.11
+:::{note} Problem 8.10
 :icon: false
 Find the intervals over which the function $\displaystyle f(x) = (x+1)\ln(x+1)$ is convex and concave.
 :::
