@@ -82,7 +82,7 @@ Find the local extreme points and the corresponding extreme values of the functi
 :icon: false
 Find the local extreme points and the corresponding extreme values of the function
 \begin{equation*}
-    f(x) = (x+2x^2)e^{-x}.
+    f(x) = (x^2+4x-4) \cdot e^{-x}.
 \end{equation*}
 :::
 
@@ -93,10 +93,6 @@ Find the local extreme points and the corresponding extreme values of the functi
     f(x) = \frac{x^2-2}{x} -3\ln(x).
 \end{equation*}
 :::
-
-
-
-
 
 ## <span class = "h2-num">8.4 </span><span class = "h2-text"> Convexity and concavity </span>
 
@@ -118,10 +114,10 @@ Graph of the function $f(x) = 2x^3 - 6x$. The function starts off beign concave 
 
 :::{note} Problem 8.9
 :icon: false
-Find the intervals over which the function $\displaystyle f(x) = e^{-x}(1+x^2)$ is convex and concave.
+Find the intervals over which the function $\displaystyle f(x) = e^{-x} \cdot (x^2+1)$ is convex and concave.
 :::
 
 :::{note} Problem 8.10
 :icon: false
-Find the intervals over which the function $\displaystyle f(x) = (x+1)\ln(x+1)$ is convex and concave.
+Find the intervals over which the function $\displaystyle f(x) = (x+1) \cdot \ln(x+1)$ is convex and concave.
 :::
